@@ -1,0 +1,28 @@
+.container{
+    margin: 0 auto;
+    margin-right: 7vw;
+    margin-top: 7vh;
+    border-radius: 2px;
+    background-color: white;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.linkContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.links{
+    color: black;
+    font-size:1.3vw;
+    text-decoration: underline;
+    font-family: 'Bebas Neue', cursive;;
+}
+.hr{
+    border: solid 1px black;
+    width: 60vw;
+    margin-bottom: 2vh;
+}
