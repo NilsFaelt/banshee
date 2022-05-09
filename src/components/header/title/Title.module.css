@@ -1,0 +1,53 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 2vh;
+    width: 60vw;
+    height: 15vh;
+    border: 1px solid black;
+    border-radius:  2px;
+    background-color: rgb(183, 146, 252);
+    box-shadow: 10px 10px 10px ;
+}
+.container:hover{
+    animation-name: backgroundAni; 
+    animation-duration: 10s ; 
+    animation-iteration-count:infinite ;
+}
+.title{
+    padding-top: 1vh;
+    font-family: 'Bebas Neue', cursive;;
+    font-size: 7vw;
+    color: rgb(255, 255, 255);
+}
+.shee{
+    color: black;
+}
+.letterB{
+    color: rgb(241, 238, 27);
+}
+.letterB:hover{
+    animation-duration: 2s;
+    animation-name: letterB;
+}
+@keyframes letterB{
+50%{
+    color:rgb(88, 232, 215) ;
+    margin-right: 2vw;
+}
+100%{
+    color: rgb(220, 213, 18);
+    margin-right: 0vw;
+}
+}
+@keyframes backgroundAni{
+0%{background-color: rgb(183, 146, 252);;}
+20%{background-color:yellow ; box-shadow: 0px 0px 0px}
+40%{background-color: teal;box-shadow: 10px 10px 10px  ;}
+60%{background-color: purple;}
+85%{background-color: rgb(51, 51, 179);}
+100%{background-color: rgb(86, 38, 182);}
+}
