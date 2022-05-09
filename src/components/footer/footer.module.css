@@ -1,0 +1,37 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    background-color: purple;
+    border-top: black 1px solid;
+    margin-top: 75vh;
+}
+.divContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1vh;
+}
+.containers{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    text-decoration: underline ;
+    gap: 0.7vh;
+}
+.text{
+    font-size:2vh;
+}
+.socialContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    margin: 0 auto;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+.socialIcon{
+    height: 3vh;
+}

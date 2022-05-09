@@ -2,6 +2,7 @@ import "./App.css";
 import DisplayModules from "./components/displayModules/DisplayModules";
 import Header from "./components/header/Header";
 import { Routes, Route } from "react-router-dom";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path='/displayModules' element={<DisplayModules />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
