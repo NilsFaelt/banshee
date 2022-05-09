@@ -15,7 +15,7 @@
 .container:hover{
     animation-name: backgroundAni; 
     animation-duration: 10s ; 
-    animation-iteration-count:infinite ;
+
 }
 .title{
     padding-top: 1vh;
@@ -35,7 +35,7 @@
 }
 @keyframes letterB{
 50%{
-    color:rgb(88, 232, 215) ;
+    color:rgb(141, 21, 196) ;
     margin-right: 2vw;
 }
 100%{
@@ -45,9 +45,8 @@
 }
 @keyframes backgroundAni{
 0%{background-color: rgb(183, 146, 252);;}
-20%{background-color:yellow ; box-shadow: 0px 0px 0px}
-40%{background-color: teal;box-shadow: 10px 10px 10px  ;}
-60%{background-color: purple;}
-85%{background-color: rgb(51, 51, 179);}
-100%{background-color: rgb(86, 38, 182);}
+10%{box-shadow: 0px 0px 0px}
+20%{background-color:yellow ;box-shadow: 10px 10px 10px  }
+80%{background-color: rgb(86, 38, 182);}
+80%{background-color: rgb(183, 146, 252);}
 }
