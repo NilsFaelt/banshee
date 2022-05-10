@@ -7,10 +7,10 @@
     border: solid 1px black;
     border-radius: 2px;
     box-shadow: 2px 2px 2px;
-    width: 80vw;
+    width: 50vw;
     height: auto;
     padding-bottom: 9vh;
-    background-color: rgb(254, 251, 251);
+    background-color: rgb(255, 255, 255);
 }
 .title{
     margin: 0 auto;
@@ -28,7 +28,7 @@
     margin: 0 auto;
     margin-top: 5vh;
     padding: 2vh;
-    width: 40vw;
+    width: 30vw;
     gap: 1vh;
 }
 .label{  
@@ -39,9 +39,40 @@
     margin: 0 auto;
     width: 30vw;
 }
+.inputAlert{
+    margin: 0 auto;
+    width: 30vw;
+    background-color:   rgb(177, 242, 242);
+}
 .textarea{
     margin: 0 auto;
     margin-top: 2vh;
     width: 30vw;
     height: 30vh;
 }
+.mailSvgFalse{
+    width: 0vw;
+    color: rgba(240, 248, 255, 0);
+}
+.mailSvg{
+    width: 4vw;
+    position: absolute;
+    animation: mailAnimation;
+    animation-duration: 5s;
+    color: rgba(0, 0, 0, 0);
+}
+
+@keyframes mailAnimation{
+
+    0%{
+        color: rgb(0, 0, 0);
+        transform: rotate(180deg);
+        margin-right:60%;
+        margin-top: 30%;
+    }
+      100%{
+          margin-left:50%;
+          margin-top: -50%;
+          color: rgb(183, 146, 252);
+      }
+  }

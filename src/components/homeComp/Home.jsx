@@ -22,8 +22,8 @@ const Home = () => {
           <p>Latest forum post will show uo here</p>
         </div>
       </section>
-      <section className={Styles.section}>test</section>
-      <section className={Styles.section}>test</section>
+      <section className={Styles.section}></section>
+      <section className={Styles.section}></section>
       <PaperAirplaneIcon className={Styles.plane} />
     </main>
   );

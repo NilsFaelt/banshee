@@ -1,7 +1,10 @@
 import { useState } from "react";
 import Styles from "./contact.module.css";
+import { MailOpenIcon } from "@heroicons/react/outline";
 
 const Contact = () => {
+  const [sendMailIcon, setSendMailIcon] = useState(false);
+  const [wrongMail, setWrongMail] = useState(false);
   const [input, setInput] = useState({ email: "", confirm: "" });
   const handleChange = (e) => {
     setInput({
@@ -11,21 +14,37 @@ const Contact = () => {
   };
   const handleClick = (e) => {
     e.preventDefault();
-    console.log("test");
+    if (input.email === input.confirm) {
+      setSendMailIcon(true);
+      setInput({ email: "", confirm: "" });
+      setTimeout(() => {
+        setSendMailIcon(false);
+      }, 5000);
+    } else if (input.email !== input.confirm) {
+      setWrongMail(true);
+      setTimeout(() => {
+        setWrongMail(false);
+      }, 100);
+    }
   };
-  console.log(input);
+
   return (
     <div className={Styles.container}>
-      <h2 className={Styles.title}>Contact us at banshee</h2>
-      <form className={Styles.form}>
+      {sendMailIcon ? (
+        <h2 className={Styles.title}>Thanks for your mail</h2>
+      ) : (
+        <h2 className={Styles.title}>Contact us at banshee</h2>
+      )}
+      <form onSubmit={(e) => handleClick(e)} className={Styles.form}>
         <label className={Styles.label} htmlFor=''>
           Email:
         </label>
         <input
           onChange={handleChange}
+          required
           name='email'
           value={input.email}
-          className={Styles.input}
+          className={wrongMail ? Styles.inputAlert : Styles.input}
           type='email'
           placeholder='Email:'
         />
@@ -34,7 +53,8 @@ const Contact = () => {
         </label>
         <input
           onChange={handleChange}
-          className={Styles.input}
+          className={wrongMail ? Styles.inputAlert : Styles.input}
+          required
           type='email'
           placeholder='Confirm Email:'
           name='confirm'
@@ -47,10 +67,13 @@ const Contact = () => {
           cols='30'
           rows='10'
         ></textarea>
-        <button onClick={(e) => handleClick(e)} className='neutral-btn'>
+        <button type='submit' className='neutral-btn'>
           SEND
         </button>
       </form>
+      <MailOpenIcon
+        className={sendMailIcon ? Styles.mailSvg : Styles.mailSvgFalse}
+      />
     </div>
   );
 };
