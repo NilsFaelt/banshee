@@ -8,7 +8,7 @@ const Navbar = () => {
         <Link className={Styles.links} to={"/"}>
           Home
         </Link>
-        <Link className={Styles.links} to={"/displayModules"}>
+        <Link className={Styles.links} to={"/components"}>
           Components
         </Link>
         <Link className={Styles.links} to={"/"}>
