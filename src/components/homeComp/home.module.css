@@ -1,0 +1,57 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin:  0 auto;
+    margin-top:5vh;
+    width: 100vw;
+    height: auto;
+}
+.section{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    width: 98vw;
+    margin: 0 auto;
+}
+.homeAboutBanshee{
+    border-radius: 2px;
+    border: solid 1px black;
+    width: 40vw;
+    padding: 2vw;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 1px;
+}
+.homeAboutBansheeTitle{
+    margin-bottom: 1vh;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: underline;
+}
+.forum{
+    border-radius: 2px;
+    border: solid 1px black;
+    padding: 2vw;
+    box-shadow: 1px 1px 1px;
+    background-color: rgb(242, 229, 133);
+}
+.plane{
+    width: 2vw;
+    color: rgb(183, 146, 252);
+    position: absolute;
+    animation:planeAnimation ;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes planeAnimation{
+  0%{
+     transform: rotate(90deg);
+      margin-right:110%;
+      margin-top: 50%;
+  }
+    100%{
+        margin-left:90%;
+        margin-top: -20%;
+        color: rgb(183, 146, 252);
+    }
+}

@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(234, 230, 230);
+}
+.neutral-btn{
+    background-color: rgb(243, 250, 250);
+    color: black ;
+    margin: 0 auto;
+    margin-top: 3vh;
+    width: 15vw;
+    height: 5vh;
+    font-size: 1.vw;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px black;
+    cursor: pointer;
+}
+.neutral-btn:hover{
+animation: neutralBtnAnimation;
+animation-duration: 0.2s;
+animation-fill-mode: forwards;
+}
+@keyframes neutralBtnAnimation{
+  
+    100%{
+      color: black;
+      background-color: rgb(177, 242, 242);
+      box-shadow: 2px 2px 2px black;
+      border: 1px solid black;
+      color: black;
+    }
+}

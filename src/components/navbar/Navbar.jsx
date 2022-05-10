@@ -17,7 +17,7 @@ const Navbar = () => {
         <Link className={Styles.links} to={"/"}>
           developers forum
         </Link>
-        <Link className={Styles.links} to={"/"}>
+        <Link className={Styles.links} to={"/contact"}>
           Contact
         </Link>
       </div>
