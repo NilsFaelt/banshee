@@ -21,8 +21,21 @@
     text-decoration: underline;
     font-family: 'Bebas Neue', cursive;;
 }
+.links:hover{
+  animation: linksAnimation;
+  animation-duration: 1.3s ;
+  animation-fill-mode: forwards;
+}
 .hr{
     border: solid 1px black;
     width: 60vw;
     margin-bottom: 2vh;
+}
+
+@keyframes linksAnimation{
+  
+    100%{
+       color: aqua;
+       text-decoration: underline purple;
+    }
 }

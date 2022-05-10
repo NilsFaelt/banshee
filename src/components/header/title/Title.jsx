@@ -7,8 +7,8 @@ const Title = () => {
       <div className={Styles.container}>
         <h1 className={Styles.title}>
           <span className={Styles.letterB}>B</span>
-          <span>a</span>
-          <span>n</span>
+          <span className={Styles.letterAN}>a</span>
+          <span className={Styles.letterAN}>n</span>
           <span className={Styles.shee}>shee</span>
         </h1>
       </div>

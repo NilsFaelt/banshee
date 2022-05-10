@@ -34,7 +34,18 @@
 .letterB{
     color: rgb(241, 238, 27);
 }
+.letterAN{
+    color: rgb(255, 255, 255);
+}
 .letterB:hover{
+    animation-duration: 2s;
+    animation-name: letterB;
+}
+.letterAN:hover{
+    animation-duration: 2s;
+    animation-name: letterB;
+}
+.shee:hover{
     animation-duration: 2s;
     animation-name: letterB;
 }
