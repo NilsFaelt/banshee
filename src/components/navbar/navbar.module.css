@@ -11,7 +11,7 @@
 
 }
 .userIcon{
-    width: 2vw;
+    height: 4vh;
     margin-left: 4vw;
 }
 .linkContainer{
@@ -21,7 +21,7 @@
 }
 .links{
     color: black;
-    font-size:1.3vw;
+    font-size:2.3vh;
     text-decoration: underline;
     font-family: 'Bebas Neue', cursive;;
 }
@@ -29,17 +29,12 @@
     display: flex;
     align-items: center;
     color: black;
-    font-size:1.3vw;
+    font-size:2.3vh;
     text-decoration: underline;
     font-family: 'Bebas Neue', cursive;
     margin-bottom: 1vh;
 }
-.links{
-    color: black;
-    font-size:1.3vw;
-    text-decoration: underline;
-    font-family: 'Bebas Neue', cursive;;
-}
+
 .links:hover{
   animation: linksAnimation;
   animation-duration: 1s ;
@@ -63,3 +58,26 @@
        text-decoration: underline purple;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .container {
+     margin-left: 3vw;
+    }
+  }
+@media screen and (max-width: 750px) {
+    .links {
+    font-size: 1.5vh;
+    }
+    .userLink{
+        font-size: 1.5vh;
+    }
+    .userIcon{
+        height: 2vh;
+        margin-left: 4vw;
+    }
+    .hr{
+        border: solid 0.5px black;
+   
+    }
+    
+  }

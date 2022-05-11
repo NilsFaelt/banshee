@@ -74,3 +74,27 @@
           color: rgb(183, 146, 252);
       }
   }
+
+  @media screen and (max-width: 750px) {
+    .container{
+          margin: 0 auto;
+          margin-left: 15vw;
+    }
+    .title{
+      margin-left: 20vw;
+      min-width: 50vw;
+    }
+    .form{
+        width:60vw;
+    }
+    .input{
+        width:60vw;
+    }
+    .inputAlert{
+        width:60vw;
+    }
+    .textarea{
+        width:60vw;
+    }
+    
+  }

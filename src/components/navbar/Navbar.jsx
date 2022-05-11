@@ -23,7 +23,7 @@ const Navbar = () => {
         </Link>
         <Link className={Styles.userLink} to={"/contact"}>
           <UserCircleIcon className={Styles.userIcon} />
-          <p>logg in</p>
+          <p>login</p>
         </Link>
       </div>
       <hr className={Styles.hr} />

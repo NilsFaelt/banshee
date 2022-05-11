@@ -13,9 +13,9 @@
     text-decoration: underline purple;
 }
 .storyContainer{
-   
     margin-left: 1vw;
     width: 40vw;
+    min-width: 250px;
     background-color: beige;
     padding: 2vw;
     box-shadow: 1px 1px 1px;
@@ -24,6 +24,7 @@
 }
 .goalsContainer{
     width: 20vw;
+    min-width: 150px;
     box-shadow: 1px 1px 1px;
     border-radius: 2px;
     border: 1px solid black;

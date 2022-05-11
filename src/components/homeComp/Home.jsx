@@ -15,7 +15,7 @@ const Home = () => {
       </nav>
       <div className={Styles.sectionContainer}>
         <section className={Styles.section}>
-          <div className={Styles.homeAboutBanshee}>
+          {/* <div className={Styles.homeAboutBanshee}>
             <h2 className={Styles.homeAboutBansheeTitle}>About us</h2>
             <p>
               Banshee were created by developers for developers, to create a
@@ -30,7 +30,7 @@ const Home = () => {
           <div className={Styles.forum}>
             <h2 className={Styles.homeAboutBansheeTitle}>Latest Post</h2>
             <p>Latest forum post will show uo here</p>
-          </div>
+          </div> */}
         </section>
 
         <section className={Styles.section}></section>
