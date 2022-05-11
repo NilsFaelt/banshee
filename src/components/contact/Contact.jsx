@@ -29,51 +29,53 @@ const Contact = () => {
   };
 
   return (
-    <div className={Styles.container}>
-      {sendMailIcon ? (
-        <h2 className={Styles.title}>Thanks for your mail</h2>
-      ) : (
-        <h2 className={Styles.title}>Contact us at banshee</h2>
-      )}
-      <form onSubmit={(e) => handleClick(e)} className={Styles.form}>
-        <label className={Styles.label} htmlFor=''>
-          Email:
-        </label>
-        <input
-          onChange={handleChange}
-          required
-          name='email'
-          value={input.email}
-          className={wrongMail ? Styles.inputAlert : Styles.input}
-          type='email'
-          placeholder='Email:'
+    <div className={Styles.outerContainer}>
+      <div className={Styles.container}>
+        {sendMailIcon ? (
+          <h2 className={Styles.title}>Thanks for your mail</h2>
+        ) : (
+          <h2 className={Styles.title}>Contact us at banshee</h2>
+        )}
+        <form onSubmit={(e) => handleClick(e)} className={Styles.form}>
+          <label className={Styles.label} htmlFor=''>
+            Email:
+          </label>
+          <input
+            onChange={handleChange}
+            required
+            name='email'
+            value={input.email}
+            className={wrongMail ? Styles.inputAlert : Styles.input}
+            type='email'
+            placeholder='Email:'
+          />
+          <label className={Styles.label} htmlFor=''>
+            Confirm Email:
+          </label>
+          <input
+            onChange={handleChange}
+            className={wrongMail ? Styles.inputAlert : Styles.input}
+            required
+            type='email'
+            placeholder='Confirm Email:'
+            name='confirm'
+            value={input.confirm}
+          />
+          <textarea
+            className={Styles.textarea}
+            name=''
+            id=''
+            cols='30'
+            rows='10'
+          ></textarea>
+          <button type='submit' className='neutral-btn'>
+            SEND
+          </button>
+        </form>
+        <MailOpenIcon
+          className={sendMailIcon ? Styles.mailSvg : Styles.mailSvgFalse}
         />
-        <label className={Styles.label} htmlFor=''>
-          Confirm Email:
-        </label>
-        <input
-          onChange={handleChange}
-          className={wrongMail ? Styles.inputAlert : Styles.input}
-          required
-          type='email'
-          placeholder='Confirm Email:'
-          name='confirm'
-          value={input.confirm}
-        />
-        <textarea
-          className={Styles.textarea}
-          name=''
-          id=''
-          cols='30'
-          rows='10'
-        ></textarea>
-        <button type='submit' className='neutral-btn'>
-          SEND
-        </button>
-      </form>
-      <MailOpenIcon
-        className={sendMailIcon ? Styles.mailSvg : Styles.mailSvgFalse}
-      />
+      </div>
     </div>
   );
 };

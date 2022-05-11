@@ -1,3 +1,7 @@
+.outerContainer{
+    display: flex;
+    flex-direction: row;
+}
 .container{
     margin: 0 auto;
     margin-top: 5vh;
@@ -8,8 +12,10 @@
     width: 50vw;
     height: auto;
     padding-bottom: 9vh;
+    
 
 }
+
 .title{
     margin: 0 auto;
     margin-top: 4vh;
@@ -22,7 +28,7 @@
     border: solid 1px black;
     border-radius: 2px;
     box-shadow: 2px 2px 2px;
-    background-color: rgb(249, 236, 119);
+    background-color: rgb(178, 148, 233);
     margin: 0 auto;
     margin-top: 5vh;
     padding: 4vh;
@@ -85,16 +91,16 @@
       min-width: 50vw;
     }
     .form{
-        width:60vw;
+        width:50vw;
     }
     .input{
-        width:60vw;
+        width:50vw;
     }
     .inputAlert{
-        width:60vw;
+        width:50vw;
     }
     .textarea{
-        width:60vw;
+        width:50vw;
     }
     
   }

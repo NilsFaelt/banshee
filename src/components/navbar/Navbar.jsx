@@ -21,7 +21,7 @@ const Navbar = () => {
         <Link className={Styles.links} to={"/contact"}>
           Contact
         </Link>
-        <Link className={Styles.userLink} to={"/contact"}>
+        <Link className={Styles.userLink} to={"/login"}>
           <UserCircleIcon className={Styles.userIcon} />
           <p>login</p>
         </Link>

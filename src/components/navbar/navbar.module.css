@@ -37,12 +37,12 @@
 
 .links:hover{
   animation: linksAnimation;
-  animation-duration: 1s ;
+  animation-duration:0.2s ;
   animation-fill-mode: forwards;
 }
 .userLink:hover{
   animation: linksAnimation;
-  animation-duration: 1s ;
+  animation-duration: 0.2s ;
   animation-fill-mode: forwards;
 }
 .hr{
