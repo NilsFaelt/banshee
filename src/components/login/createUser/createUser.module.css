@@ -9,8 +9,8 @@
 }
 .title{
     margin: 0 auto;
-    font-family: 'Bebas Neue', cursive;;
-    text-decoration: underline;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: underline purple;
 }
 .loginForm{
     display: flex;

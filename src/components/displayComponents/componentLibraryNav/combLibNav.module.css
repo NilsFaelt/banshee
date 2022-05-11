@@ -1,0 +1,26 @@
+.navContainer{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1vh;
+    width: 100vw;
+    border-bottom: 1px solid black;
+    margin-bottom: 40vh;
+}
+.link{
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+}
+.link:hover{
+    animation: linksAnimation;
+    animation-duration:0.2s ;
+    animation-fill-mode: forwards;
+  }
+  @keyframes linksAnimation{
+  
+    100%{
+       color: aqua;
+       text-decoration: underline purple;
+    }
+}

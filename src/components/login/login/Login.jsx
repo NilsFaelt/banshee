@@ -1,7 +1,11 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Styles from "./login.module.css";
 
 const Login = () => {
+  const [userName, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
   const handelClick = (e) => {
     e.preventDefault();
     console.log("test");
