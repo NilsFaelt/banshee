@@ -1,0 +1,46 @@
+.container{
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 30vh;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: auto; 
+}
+.title{
+    margin: 0 auto;
+    font-family: 'Bebas Neue', cursive;;
+    text-decoration: underline;
+}
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 4vh;
+    padding: 2vw;
+    width: 30vw;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: rgb(248, 237, 165);
+    box-shadow: 1px 1px 1px ;
+}
+.inputContainer{
+    margin: 0 auto;
+    margin-top: 2vh;
+    margin-bottom: 0vh;
+    font-family: 'Bebas Neue', cursive;;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+.link{
+    margin: 0 auto;
+    margin-top: 2vh;
+    color: black;
+    text-decoration: none;
+}
+.btnContainer{
+    margin: 0 auto;
+    margin-top: 1vh;
+    
+}

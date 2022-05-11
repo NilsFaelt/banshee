@@ -12,8 +12,6 @@
     width: 50vw;
     height: auto;
     padding-bottom: 9vh;
-    
-
 }
 
 .title{
@@ -28,7 +26,7 @@
     border: solid 1px black;
     border-radius: 2px;
     box-shadow: 2px 2px 2px;
-    background-color: rgb(178, 148, 233);
+    background-color: rgb(248, 237, 165);
     margin: 0 auto;
     margin-top: 5vh;
     padding: 4vh;
