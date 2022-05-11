@@ -1,11 +1,11 @@
 import "./App.css";
-import DisplayModules from "./components/displayModules/DisplayModules";
 import Header from "./components/header/Header";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import Home from "./components/homeComp/Home";
 import Contact from "./components/contact/Contact";
-import Components from "./components/components/Components";
+import Components from "./components/displayComponents/Components";
+import About from "./components/about/About";
 
 function App() {
   return (
@@ -15,8 +15,8 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/components' element={<Components />} />
+        <Route path='/about' element={<About />} />
       </Routes>
-
       <Footer />
     </div>
   );

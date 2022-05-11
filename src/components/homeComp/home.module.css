@@ -1,18 +1,37 @@
 .home{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 2vh;
     margin:  0 auto;
     margin-top:5vh;
     width: 100vw;
     height: auto;
 }
+
+.sectionContainer{
+    gap: 2vw;
+    margin-left: 1vw;
+    max-height: 35vh;
+    display: flex;
+    flex-direction: column;
+}
 .section{
     display: flex;
     flex-direction: row;
+    font-size: 1vw;
     gap: 2vw;
-    width: 98vw;
+    width: 100vw;
     margin: 0 auto;
+}
+.homeNav{
+    min-width: 6vw;
+    height: 70vh;
+    margin-left: 2vw;
+    font-size: 1vw;
+    padding: 2vw;
+    border: solid 1px black;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px;
 }
 .homeAboutBanshee{
     border-radius: 2px;
@@ -21,10 +40,12 @@
     padding: 2vw;
     background-color: aliceblue;
     box-shadow: 1px 1px 1px;
+    overflow: scroll;
 }
 .homeAboutBansheeTitle{
     margin-bottom: 1vh;
     font-family: 'Bebas Neue', cursive;
+    font-size: 2vw;
     text-decoration: underline;
 }
 .forum{

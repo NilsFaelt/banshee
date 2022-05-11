@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Styles from "./navbar.module.css";
+import { UserCircleIcon } from "@heroicons/react/outline";
 
 const Navbar = () => {
   return (
@@ -11,7 +12,7 @@ const Navbar = () => {
         <Link className={Styles.links} to={"/components"}>
           Components
         </Link>
-        <Link className={Styles.links} to={"/"}>
+        <Link className={Styles.links} to={"/about"}>
           ABout banshee
         </Link>
         <Link className={Styles.links} to={"/"}>
@@ -19,6 +20,10 @@ const Navbar = () => {
         </Link>
         <Link className={Styles.links} to={"/contact"}>
           Contact
+        </Link>
+        <Link className={Styles.userLink} to={"/contact"}>
+          <UserCircleIcon className={Styles.userIcon} />
+          <p>logg in</p>
         </Link>
       </div>
       <hr className={Styles.hr} />

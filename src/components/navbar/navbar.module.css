@@ -10,6 +10,10 @@
     justify-content: space-around;
 
 }
+.userIcon{
+    width: 2vw;
+    margin-left: 4vw;
+}
 .linkContainer{
     display: flex;
     flex-direction: row;
@@ -21,7 +25,27 @@
     text-decoration: underline;
     font-family: 'Bebas Neue', cursive;;
 }
+.userLink{
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size:1.3vw;
+    text-decoration: underline;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 1vh;
+}
+.links{
+    color: black;
+    font-size:1.3vw;
+    text-decoration: underline;
+    font-family: 'Bebas Neue', cursive;;
+}
 .links:hover{
+  animation: linksAnimation;
+  animation-duration: 1s ;
+  animation-fill-mode: forwards;
+}
+.userLink:hover{
   animation: linksAnimation;
   animation-duration: 1s ;
   animation-fill-mode: forwards;
