@@ -6,6 +6,8 @@ const Login = () => {
   const [userName, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
+  const login = async () => {};
+
   const handelClick = (e) => {
     e.preventDefault();
     console.log("test");

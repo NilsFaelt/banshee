@@ -3,6 +3,7 @@ import Styles from "./navbar.module.css";
 import { UserCircleIcon } from "@heroicons/react/outline";
 
 const Navbar = () => {
+  const loggou = async () => {};
   return (
     <nav className={Styles.container}>
       <div className={Styles.linkContainer}>
