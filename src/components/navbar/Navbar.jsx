@@ -1,9 +1,19 @@
 import { Link } from "react-router-dom";
 import Styles from "./navbar.module.css";
 import { UserCircleIcon } from "@heroicons/react/outline";
+import { onAuthStateChanged, signOut } from "firebase/auth";
+import { auth } from "../../firebase-config";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
-  const loggou = async () => {};
+  const [user, setUser] = useState({});
+  onAuthStateChanged(auth, (currentUser) => {
+    setUser(currentUser);
+  });
+  const loggout = async () => {
+    await signOut(auth);
+  };
+
   return (
     <nav className={Styles.container}>
       <div className={Styles.linkContainer}>
@@ -22,11 +32,21 @@ const Navbar = () => {
         <Link className={Styles.links} to={"/contact"}>
           Contact
         </Link>
-        <Link className={Styles.userLink} to={"/login"}>
-          <UserCircleIcon className={Styles.userIcon} />
-          <p>login</p>
-        </Link>
+        {!user ? (
+          <Link className={Styles.userLink} to={"/login"}>
+            <UserCircleIcon className={Styles.userIcon} /> <p>Login</p>
+          </Link>
+        ) : null}
+        {user ? (
+          <div className={Styles.linkContainer}>
+            <UserCircleIcon className={Styles.userIcon} />
+            <p onClick={() => loggout()} className={Styles.logout}>
+              Logout
+            </p>
+          </div>
+        ) : null}
       </div>
+      {user?.email}
       <hr className={Styles.hr} />
     </nav>
   );

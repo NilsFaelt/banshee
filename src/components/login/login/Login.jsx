@@ -1,39 +1,41 @@
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../../firebase-config";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Styles from "./login.module.css";
+import { async } from "@firebase/util";
 
 const Login = () => {
-  const [userName, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const login = async () => {};
-
-  const handelClick = (e) => {
-    e.preventDefault();
-    console.log("test");
+  const login = async () => {
+    try {
+      const user = await signInWithEmailAndPassword(auth, email, password);
+    } catch (err) {
+      console.log(`Something went wromg when trying to login, err ${err}`);
+    }
   };
+  // usestate pass down user ======= FIXXXX
   return (
     <div className={Styles.container}>
       <h2 className={Styles.title}>Login</h2>
       <form className={Styles.loginForm} action=''>
         <div className={Styles.inputContainer}>
-          <label htmlFor=''>USERNAME:</label>
-          <input type='text' />
+          <label htmlFor=''>EMAIL:</label>
+          <input onChange={(e) => setEmail(e.target.value)} type='text' />
         </div>
         <div className={Styles.inputContainer}>
-          <label htmlFor=''>PASSWORD</label>
+          <label onChange={(e) => setPassword(e.target.value)} htmlFor=''>
+            PASSWORD
+          </label>
           <input type='password' />
         </div>
         <Link className={Styles.link} to={"/createUser"}>
           Create Account?
         </Link>
         <div className={Styles.btnContainer}>
-          <button
-            onClick={(e) => {
-              handelClick(e);
-            }}
-            className='neutral-btn'
-          >
+          <button onClick={login()} className='neutral-btn'>
             LOGIN
           </button>
         </div>

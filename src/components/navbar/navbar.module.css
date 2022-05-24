@@ -34,8 +34,22 @@
     font-family: 'Bebas Neue', cursive;
     margin-bottom: 1vh;
 }
+.logout{
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size:2.3vh;
+    text-decoration: underline;
+    font-family: 'Bebas Neue', cursive;
+    cursor: pointer;
+}
 
 .links:hover{
+  animation: linksAnimation;
+  animation-duration:0.2s ;
+  animation-fill-mode: forwards;
+}
+.logout:hover{
   animation: linksAnimation;
   animation-duration:0.2s ;
   animation-fill-mode: forwards;

@@ -1,15 +1,17 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Styles from "./createUser.module.css";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../../firebase-config";
 
 const CreateUser = () => {
-  const [userName, setUsername] = useState("");
+  const [user, setUser] = useState();
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [email, setEmail] = useState("");
   const [confirmEmail, setConfirmEmail] = useState("");
 
-  const register = (e) => {
+  const register = async (e) => {
     e.preventDefault();
     if (
       password &&
@@ -17,34 +19,40 @@ const CreateUser = () => {
       email &&
       email === confirmEmail
     ) {
-      alert("correct");
+      try {
+        const createdUser = await createUserWithEmailAndPassword(
+          auth,
+          email,
+          password
+        );
+        setUser(createdUser);
+        console.log(user);
+      } catch (err) {
+        console.log(
+          `Something went wrong when tyrying to create user, err ${err.message}`
+        );
+      }
       setUsername("");
       setPassword("");
       setConfirmPassword("");
       setEmail("");
       setConfirmEmail("");
+    } else {
+      alert("Your mail or password didnt match");
     }
   };
+  console.log(createUserWithEmailAndPassword);
 
   return (
     <div className={Styles.container}>
       <h2 className={Styles.title}>Create account</h2>
       <form
-        onSubmit={(e) => {
-          register(e);
-        }}
+        // onSubmit={(e) => {
+        //   register(e);
+        // }}
         className={Styles.loginForm}
         action=''
       >
-        <div className={Styles.inputContainer}>
-          <label htmlFor=''>USERNAME:</label>
-          <input
-            onChange={(e) => setUsername(e.target.value)}
-            required
-            type='text'
-            value={userName}
-          />
-        </div>
         <div className={Styles.inputContainer}>
           <label htmlFor=''>PASSWORD:</label>
           <input
@@ -86,7 +94,9 @@ const CreateUser = () => {
           Login?
         </Link>
         <div className={Styles.btnContainer}>
-          <button className='neutral-btn'>Create account</button>
+          <button onClick={(e) => register(e)} className='neutral-btn'>
+            Create account
+          </button>
         </div>
       </form>
     </div>
