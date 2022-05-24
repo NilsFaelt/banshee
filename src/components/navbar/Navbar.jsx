@@ -13,7 +13,7 @@ const Navbar = () => {
   const loggout = async () => {
     await signOut(auth);
   };
-
+  console.log(user);
   return (
     <nav className={Styles.container}>
       <div className={Styles.linkContainer}>
@@ -46,7 +46,7 @@ const Navbar = () => {
           </div>
         ) : null}
       </div>
-      {user?.email}
+      <p className={Styles.mail}> {user?.email}</p>
       <hr className={Styles.hr} />
     </nav>
   );

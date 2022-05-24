@@ -43,6 +43,13 @@
     font-family: 'Bebas Neue', cursive;
     cursor: pointer;
 }
+.mail{
+    color: black;
+    font-size:2.3vh;
+    text-decoration: underline;
+    font-family: 'Bebas Neue', cursive;;
+    margin-left: 46vw;
+}
 
 .links:hover{
   animation: linksAnimation;
@@ -64,6 +71,7 @@
     width: 60vw;
     margin-bottom: 2vh;
 }
+
 
 @keyframes linksAnimation{
   

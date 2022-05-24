@@ -5,7 +5,6 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../../firebase-config";
 
 const CreateUser = () => {
-  const [user, setUser] = useState();
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [email, setEmail] = useState("");
@@ -20,19 +19,12 @@ const CreateUser = () => {
       email === confirmEmail
     ) {
       try {
-        const createdUser = await createUserWithEmailAndPassword(
-          auth,
-          email,
-          password
-        );
-        setUser(createdUser);
-        console.log(user);
+        await createUserWithEmailAndPassword(auth, email, password);
       } catch (err) {
         console.log(
           `Something went wrong when tyrying to create user, err ${err.message}`
         );
       }
-      setUsername("");
       setPassword("");
       setConfirmPassword("");
       setEmail("");
@@ -41,18 +33,11 @@ const CreateUser = () => {
       alert("Your mail or password didnt match");
     }
   };
-  console.log(createUserWithEmailAndPassword);
 
   return (
     <div className={Styles.container}>
       <h2 className={Styles.title}>Create account</h2>
-      <form
-        // onSubmit={(e) => {
-        //   register(e);
-        // }}
-        className={Styles.loginForm}
-        action=''
-      >
+      <form className={Styles.loginForm} action=''>
         <div className={Styles.inputContainer}>
           <label htmlFor=''>PASSWORD:</label>
           <input

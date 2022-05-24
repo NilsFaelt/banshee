@@ -3,7 +3,6 @@ import { auth } from "../../../firebase-config";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Styles from "./login.module.css";
-import { async } from "@firebase/util";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -16,7 +15,7 @@ const Login = () => {
       console.log(`Something went wromg when trying to login, err ${err}`);
     }
   };
-  // usestate pass down user ======= FIXXXX
+
   return (
     <div className={Styles.container}>
       <h2 className={Styles.title}>Login</h2>
@@ -35,7 +34,7 @@ const Login = () => {
           Create Account?
         </Link>
         <div className={Styles.btnContainer}>
-          <button onClick={login()} className='neutral-btn'>
+          <button onClick={login} className='neutral-btn'>
             LOGIN
           </button>
         </div>
