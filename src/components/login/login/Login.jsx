@@ -5,14 +5,21 @@ import { Link } from "react-router-dom";
 import Styles from "./login.module.css";
 
 const Login = () => {
+  const [user, setUSer] = useState({});
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  console.log(user, "useeeeeeeeeer");
 
-  const login = async () => {
+  const login = async (e) => {
+    e.preventDefault();
     try {
-      const user = await signInWithEmailAndPassword(auth, email, password);
+      await signInWithEmailAndPassword(auth, email, password);
+      setEmail("");
+      setPassword("");
     } catch (err) {
-      console.log(`Something went wromg when trying to login, err ${err}`);
+      console.log(
+        `Something went wromg when trying to login, err ${err.message}`
+      );
     }
   };
 
@@ -22,19 +29,25 @@ const Login = () => {
       <form className={Styles.loginForm} action=''>
         <div className={Styles.inputContainer}>
           <label htmlFor=''>EMAIL:</label>
-          <input onChange={(e) => setEmail(e.target.value)} type='text' />
+          <input
+            onChange={(e) => setEmail(e.target.value)}
+            type='text'
+            value={email}
+          />
         </div>
         <div className={Styles.inputContainer}>
-          <label onChange={(e) => setPassword(e.target.value)} htmlFor=''>
-            PASSWORD
-          </label>
-          <input type='password' />
+          <label htmlFor=''>PASSWORD</label>
+          <input
+            onChange={(e) => setPassword(e.target.value)}
+            type='password'
+            value={password}
+          />
         </div>
         <Link className={Styles.link} to={"/createUser"}>
           Create Account?
         </Link>
         <div className={Styles.btnContainer}>
-          <button onClick={login} className='neutral-btn'>
+          <button onClick={(e) => login(e)} className='neutral-btn'>
             LOGIN
           </button>
         </div>
