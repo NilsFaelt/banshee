@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Styles from "./contact.module.css";
 import { MailOpenIcon } from "@heroicons/react/outline";
 import { onAuthStateChanged } from "firebase/auth";
@@ -6,6 +6,8 @@ import { auth } from "../../firebase-config";
 
 const Contact = () => {
   const [user, setUser] = useState({});
+  const [fillMail, setFillMail] = useState(false);
+
   onAuthStateChanged(auth, (currentUser) => {
     setUser(currentUser);
   });
@@ -20,6 +22,7 @@ const Contact = () => {
   };
   const handleClick = (e) => {
     e.preventDefault();
+    setFillMail(false);
     if (input.email === input.confirm) {
       setSendMailIcon(true);
       setInput({ email: "", confirm: "" });
@@ -32,6 +35,10 @@ const Contact = () => {
         setWrongMail(false);
       }, 100);
     }
+  };
+
+  const setFillMailFunc = () => {
+    setFillMail(true);
   };
 
   return (
@@ -50,7 +57,7 @@ const Contact = () => {
             onChange={handleChange}
             required
             name='email'
-            value={user ? user.email : input.email}
+            value={fillMail ? user.email : input.email}
             className={wrongMail ? Styles.inputAlert : Styles.input}
             type='email'
             placeholder='Email:'
@@ -65,8 +72,13 @@ const Contact = () => {
             type='email'
             placeholder='Confirm Email:'
             name='confirm'
-            value={user ? user.email : input.confirm}
+            value={fillMail ? user.email : input.email}
           />
+          {user ? (
+            <p onClick={() => setFillMailFunc()} className={Styles.useMail}>
+              Use: {user?.email}
+            </p>
+          ) : null}
           <textarea
             className={Styles.textarea}
             name=''

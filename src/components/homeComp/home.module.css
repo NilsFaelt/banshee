@@ -7,6 +7,12 @@
     width: 100vw;
     height: auto;
 }
+.hrTwo{
+    margin: 0 auto;
+    width: 95vw;
+}
+
+
 
 .sectionContainer{
     gap: 2vw;

@@ -16,7 +16,7 @@
 
 .title{
     margin: 0 auto;
-    margin-top: 4vh;
+    margin-top: 2vh;
     font-family: 'Bebas Neue', cursive;
     text-decoration: underline purple;
 }
@@ -40,6 +40,12 @@
 .input{
     margin: 0 auto;
     width: 30vw;
+}
+.useMail{
+   text-decoration: underline;
+   font-family: 'Bebas Neue', cursive;
+   margin: 0 auto;
+   cursor: pointer;
 }
 .inputAlert{
     margin: 0 auto;
