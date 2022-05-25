@@ -16,6 +16,11 @@ const Navbar = () => {
   console.log(user);
   return (
     <nav className={Styles.container}>
+      {user ? (
+        <div className={Styles.mailDiv}>
+          <p className={Styles.mail}>{user?.email}</p>
+        </div>
+      ) : null}
       <div className={Styles.linkContainer}>
         <Link className={Styles.links} to={"/"}>
           Home
@@ -46,7 +51,7 @@ const Navbar = () => {
           </div>
         ) : null}
       </div>
-      <p className={Styles.mail}> {user?.email}</p>
+
       <hr className={Styles.hr} />
     </nav>
   );
