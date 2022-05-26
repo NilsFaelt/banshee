@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Styles from "./createUser.module.css";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../../firebase-config";
 
 const CreateUser = () => {
+  const navigate = useNavigate();
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [email, setEmail] = useState("");
@@ -20,6 +21,7 @@ const CreateUser = () => {
     ) {
       try {
         await createUserWithEmailAndPassword(auth, email, password);
+        navigate("/");
       } catch (err) {
         console.log(
           `Something went wrong when tyrying to create user, err ${err.message}`

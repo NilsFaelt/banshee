@@ -41,7 +41,7 @@
     width: 30vw;
 }
 .useMail{
-   text-decoration: underline;
+   text-decoration: underline black 1px;
    font-family: 'Bebas Neue', cursive;
    margin: 0 auto;
    cursor: pointer;

@@ -1,21 +1,24 @@
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../../firebase-config";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Styles from "./login.module.css";
 
 const Login = () => {
+  const navigate = useNavigate();
   const [user, setUSer] = useState({});
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  console.log(user, "useeeeeeeeeer");
 
   const login = async (e) => {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
+      console.log(auth);
       setEmail("");
       setPassword("");
+      navigate("/");
+      console.log(auth.accessToken, "tokennnnnnnnnn");
     } catch (err) {
       console.log(
         `Something went wromg when trying to login, err ${err.message}`
