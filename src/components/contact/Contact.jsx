@@ -4,8 +4,7 @@ import { MailOpenIcon } from "@heroicons/react/outline";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../../firebase-config";
 
-const Contact = () => {
-  const [user, setUser] = useState({});
+const Contact = ({ user }) => {
   const [fillMail, setFillMail] = useState(false);
 
   const [sendMailIcon, setSendMailIcon] = useState(false);
@@ -69,7 +68,7 @@ const Contact = () => {
             type='email'
             placeholder='Confirm Email:'
             name='confirm'
-            value={fillMail ? user.email : input.email}
+            value={fillMail ? user.email : input.confirm}
           />
           {user ? (
             <p onClick={() => setFillMailFunc()} className={Styles.useMail}>

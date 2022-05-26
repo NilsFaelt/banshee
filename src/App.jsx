@@ -11,12 +11,13 @@ import CreateUser from "./components/login/createUser/CreateUser";
 import { useState } from "react";
 
 function App() {
+  const [user, setUser] = useState({});
   return (
     <div className='App'>
-      <Header />
+      <Header user={user} setUser={setUser} />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path='/contact' element={<Contact user={user} />} />
         <Route path='/components' element={<Components />} />
         <Route path='/about' element={<About />} />
         <Route path='/login' element={<Login />} />

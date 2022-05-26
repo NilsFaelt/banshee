@@ -5,8 +5,7 @@ import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../../firebase-config";
 import { useEffect, useState } from "react";
 
-const Navbar = () => {
-  const [user, setUser] = useState({});
+const Navbar = ({ user, setUser }) => {
   onAuthStateChanged(auth, (currentUser) => {
     setUser(currentUser);
   });
