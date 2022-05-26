@@ -16,7 +16,6 @@
 
 .title{
     margin: 0 auto;
-    margin-top: 2vh;
     font-family: 'Bebas Neue', cursive;
     text-decoration: underline purple;
 }
@@ -28,7 +27,7 @@
     box-shadow: 2px 2px 2px;
     background-color: rgb(202, 230, 251);
     margin: 0 auto;
-    margin-top: 5vh;
+    margin-top: 3vh;
     padding: 4vh;
     width: 30vw;
     gap: 1vh;

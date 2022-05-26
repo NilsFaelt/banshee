@@ -8,9 +8,6 @@ const Contact = () => {
   const [user, setUser] = useState({});
   const [fillMail, setFillMail] = useState(false);
 
-  onAuthStateChanged(auth, (currentUser) => {
-    setUser(currentUser);
-  });
   const [sendMailIcon, setSendMailIcon] = useState(false);
   const [wrongMail, setWrongMail] = useState(false);
   const [input, setInput] = useState({ email: "", confirm: "" });
