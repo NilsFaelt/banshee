@@ -33,6 +33,10 @@
     display: flex;
     flex-direction: column;
 }
+.loginLink{
+    text-decoration: underline ;
+    font-family: 'Fraunces', serif;
+}
 .link{
     margin: 0 auto;
     margin-top: 2vh;

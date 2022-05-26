@@ -78,7 +78,7 @@ const CreateUser = () => {
         </div>
 
         <Link className={Styles.link} to={"/login"}>
-          Login?
+          <p className={Styles.loginLink}>Login?</p>
         </Link>
         <div className={Styles.btnContainer}>
           <button onClick={(e) => register(e)} className='neutral-btn'>
