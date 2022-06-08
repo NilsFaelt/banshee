@@ -34,8 +34,10 @@
     flex-direction: column;
 }
 .loginLink{
-    text-decoration: underline ;
-    font-family: 'Fraunces', serif;
+    text-decoration: underline 1px ;
+
+
+    
 }
 .link{
     margin: 0 auto;

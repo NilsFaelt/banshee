@@ -41,24 +41,6 @@ const CreateUser = () => {
       <h2 className={Styles.title}>Create account</h2>
       <form className={Styles.loginForm} action=''>
         <div className={Styles.inputContainer}>
-          <label htmlFor=''>PASSWORD:</label>
-          <input
-            onChange={(e) => setPassword(e.target.value)}
-            required
-            type='password'
-            value={password}
-          />
-        </div>
-        <div className={Styles.inputContainer}>
-          <label htmlFor=''>CONFIRM PASSWORD::</label>
-          <input
-            onChange={(e) => setConfirmPassword(e.target.value)}
-            required
-            type='password'
-            value={confirmPassword}
-          />
-        </div>
-        <div className={Styles.inputContainer}>
           <label htmlFor=''>EMAIL:</label>
           <input
             onChange={(e) => setEmail(e.target.value)}
@@ -74,6 +56,24 @@ const CreateUser = () => {
             required
             type='email'
             value={confirmEmail}
+          />
+        </div>
+        <div className={Styles.inputContainer}>
+          <label htmlFor=''>PASSWORD:</label>
+          <input
+            onChange={(e) => setPassword(e.target.value)}
+            required
+            type='password'
+            value={password}
+          />
+        </div>
+        <div className={Styles.inputContainer}>
+          <label htmlFor=''>CONFIRM PASSWORD::</label>
+          <input
+            onChange={(e) => setConfirmPassword(e.target.value)}
+            required
+            type='password'
+            value={confirmPassword}
           />
         </div>
 
