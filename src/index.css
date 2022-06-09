@@ -29,3 +29,5 @@ body{
     box-shadow: 1px 1px 3px;
     background-color: rgb(239, 7, 3);
 }
+a{color: black;
+text-decoration: none;}
