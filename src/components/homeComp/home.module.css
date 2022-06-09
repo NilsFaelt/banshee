@@ -13,8 +13,8 @@
 }
 .sectionContainer{
     gap: 2vw;
-    margin-left: 1vw;
-    max-height: 35vh;
+    margin-left: 0vw;
+    max-height: auto;
     max-width: 30vw;
     display: flex;
     flex-direction: column;
