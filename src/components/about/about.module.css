@@ -22,7 +22,7 @@
     margin-right: 5vw;
     width: 40vw;
     min-width: 250px;
-    background-color: rgba(255, 255, 255, 0.408);
+    background-color: rgba(255, 255, 255, 0.681);
     color: rgb(0, 0, 0);
     padding: 2vw;
     box-shadow: 1px 1px 1px;
@@ -37,5 +37,30 @@
     border-radius: 2px;
     border: 1px solid black;
     padding: 2vw;
-    background-color: rgba(148, 248, 241, 0.472);
+    background-color: rgba(148, 248, 241, 0.827);
+}
+.firstTitle{
+    margin-top: 7vh;
+    text-decoration: underline purple;
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Bebas Neue', cursive;
+}
+.secondTitle{
+    margin-top: 12vh;
+    text-decoration: underline turquoise;
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Bebas Neue', cursive;
+}
+.text{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 2vh;
+}
+.textCursive{
+    text-align: center;
+    margin-top: 2vh;
+    font-family: 'Architects Daughter', cursive;
+    color: rgb(0, 0, 0);
 }
