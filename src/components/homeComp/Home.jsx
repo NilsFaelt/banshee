@@ -48,14 +48,13 @@ const Home = () => {
                 I went out for a search and found it, but never in my mind could
                 i imagine the beauty they had been able to create.
               </p>
-
               <p className={Styles.textCursive}>Love them backenders</p>
             </a>
           </section>
           <section className={Styles.section}>
             <h3
               className={Styles.title}
-              style={{ marginBottom: "3vh", marginTop: "3vh" }}
+              style={{ marginBottom: "4vh", marginTop: "1vh" }}
             >
               Badass websites
             </h3>
@@ -116,6 +115,34 @@ const Home = () => {
               BSTD
             </a>
           </section>
+        </div>
+        <div style={{ width: "100vw", height: "30vh", textAlign: "center" }}>
+          <a
+            target='_blank'
+            href='https://www.npmjs.com/package/react-parallax'
+          >
+            <h2 className={Styles.parallaxTitle}>
+              How i learned to love and hate the parallax effect
+            </h2>
+            <p
+              className={Styles.textCursive}
+              style={{ color: "black", textDecoration: "underline" }}
+            >
+              {" "}
+              The parallax effect{" "}
+            </p>
+          </a>
+          <p style={{ marginTop: "2vh" }}>
+            The parallax effect can be mezmerising and give depth and a
+            responsive feeling to your website, and if you use it with caution
+            you will make your website/app feel so much more profesional.
+            <br /> But listen now, in the same way parallax can add unlimited
+            power to your website, it can make your website chaotic, hard to
+            manuever, and trust me it can even make the user feel seasick if you
+            added to much to your parallax. <br />
+            With thoose words said, start your new project npm install
+            react-parallax, and find the power of parallax.
+          </p>
         </div>
         <div style={{ width: "100vw", height: "30vh" }}>
           <Parallax

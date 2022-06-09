@@ -53,9 +53,17 @@
     margin-top: 2vh;
 }
 .textCursive{
+    text-align: center;
     margin-top: 2vh;
     font-family: 'Architects Daughter', cursive;
     color: white;
+}
+.parallaxTitle{
+    margin-top: 7vh;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 4vw;
+    font-family: 'Bebas Neue', cursive;;
 }
 .websiteLinks{
     color: white;
