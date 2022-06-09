@@ -77,6 +77,7 @@ const Contact = ({ user }) => {
           ) : null}
           <textarea
             className={Styles.textarea}
+            required
             name=''
             id=''
             cols='30'

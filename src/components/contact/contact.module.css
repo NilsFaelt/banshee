@@ -4,19 +4,22 @@
 }
 .container{
     margin: 0 auto;
-    margin-top: 5vh;
+    margin-top: 14vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: 2px;
-    width: 50vw;
+    width: 100vw;
+    background-image: url("https://images.unsplash.com/photo-1466096115517-bceecbfb6fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
     height: auto;
     padding-bottom: 9vh;
 }
 
 .title{
     margin: 0 auto;
+    padding-top: 5vh;
     font-family: 'Bebas Neue', cursive;
+    color: white;
     text-decoration: underline purple;
 }
 .form{
@@ -25,7 +28,7 @@
     border: solid 1px rgb(220, 204, 29);
     border-radius: 2px;
     box-shadow: 2px 2px 2px;
-    background-color: rgb(202, 230, 251);
+    background-color: rgba(42, 144, 141, 0.928);
     margin: 0 auto;
     margin-top: 3vh;
     padding: 4vh;
@@ -34,6 +37,7 @@
 }
 .label{  
     margin: 0 auto;
+    color: white;
     font-family: 'Bebas Neue', cursive;
 }
 .input{
@@ -43,13 +47,14 @@
 .useMail{
    text-decoration: underline black 1px;
    font-family: 'Bebas Neue', cursive;
+   color: white;
    margin: 0 auto;
    cursor: pointer;
 }
 .inputAlert{
     margin: 0 auto;
     width: 30vw;
-    background-color:   rgb(177, 242, 242);
+    background-color:rgb(177, 242, 242);
 }
 .textarea{
     margin: 0 auto;
@@ -88,10 +93,10 @@
   @media screen and (max-width: 750px) {
     .container{
           margin: 0 auto;
-          margin-left: 15vw;
+          margin-top: 5vh;
     }
     .title{
-      margin-left: 20vw;
+      text-align: center;
       min-width: 50vw;
     }
     .form{
