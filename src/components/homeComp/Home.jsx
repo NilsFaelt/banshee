@@ -3,6 +3,7 @@ import { PaperAirplaneIcon } from "@heroicons/react/solid";
 import { Parallax } from "react-parallax";
 import goonies from "../../img/goonies.png";
 import shipsite from "../../img/shipsite.png";
+import longshot from "../../img/longshot.png";
 const image1 =
   "https://images.unsplash.com/photo-1654707981578-e1a5ad419ea0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80";
 
@@ -146,12 +147,49 @@ const Home = () => {
         </div>
         <div style={{ width: "100vw", height: "30vh" }}>
           <Parallax
-            blur={{ min: -15, max: 15 }}
             bgImage={image1}
             style={{ width: "100vw", height: "30vh", marginTop: "20vh" }}
           >
             <div style={{ width: "100vw" }}></div>
           </Parallax>
+          <div
+            style={{
+              width: "100vw",
+              height: "auto",
+              textAlign: "center",
+              marginTop: "20vh",
+            }}
+          >
+            <h2 className={Styles.parallaxTitle}>Im in love with a website</h2>
+            <p style={{ marginTop: "2vh" }}>
+              Something with this website made me fall in love, maybe the broken
+              sword ish illustartions, combined with the weirdness of trying to
+              scroll up and down and you end up going horizontal.
+            </p>
+            <a target='_blank' href='https://longshotfeatures.com/'>
+              <Parallax
+                bgImage={longshot}
+                style={{
+                  width: "70vw",
+                  height: "30vh",
+                  margin: "0 auto",
+                  marginTop: "2vh",
+                }}
+              >
+                <div style={{ width: "100vw" }}></div>
+              </Parallax>
+              <p
+                className={Styles.textCursive}
+                style={{
+                  textDecoration: "underline",
+                  color: "black",
+                  marginBottom: "20vh",
+                }}
+              >
+                Make sure to give a go.
+              </p>
+            </a>
+          </div>
         </div>
       </div>
       <PaperAirplaneIcon className={Styles.plane} />
