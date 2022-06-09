@@ -20,7 +20,7 @@ const About = () => {
       <div className={Styles.goalsContainer}>
         <h2 className={Styles.title}>Our Goals</h2>
         <p>
-          • Create snippets and modules that evryone can take part of and use
+          • Create snippets and modules that everyone can take part of and use
           for their own projects. <br /> • Let you developers rate all of our
           products, so that its easier for all of us to choose wichone to use.
           <br />• Let evryone add their own modules and snippets to our forum,

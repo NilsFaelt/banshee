@@ -3,9 +3,13 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    border-top: 2px solid purple;
+    border-bottom: 2px solid yellow;
     gap: 2vw;
     width: 100vw;
+    padding: 5vh;
     height: auto;
+    background-image: url("https://images.unsplash.com/photo-1614624532983-4ce03382d63d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80");
     background-color: rgba(240, 248, 255, 0);
 }
 .title{
@@ -15,9 +19,11 @@
 }
 .storyContainer{
     margin-left: 1vw;
+    margin-right: 5vw;
     width: 40vw;
     min-width: 250px;
-    background-color: beige;
+    background-color: rgba(255, 255, 255, 0.408);
+    color: rgb(0, 0, 0);
     padding: 2vw;
     box-shadow: 1px 1px 1px;
     border-radius: 2px;
@@ -25,10 +31,11 @@
 }
 .goalsContainer{
     width: 20vw;
+    margin-right: 2vw;
     min-width: 150px;
     box-shadow: 1px 1px 1px;
     border-radius: 2px;
     border: 1px solid black;
     padding: 2vw;
-    background-color: rgb(148, 248, 241);
+    background-color: rgba(148, 248, 241, 0.472);
 }
