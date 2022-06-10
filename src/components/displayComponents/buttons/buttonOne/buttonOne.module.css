@@ -1,0 +1,111 @@
+.container{
+    display: flex;
+    margin: 0 auto;
+    width: 90vw;
+    min-height:  30vh;
+    border: 1px solid purple;
+    background-color: rgb(0, 0, 0);
+  
+}
+.containerAnimation{
+    display: flex;
+    margin: 0 auto;
+    width: 90vw;
+    min-height:  30vh;
+    border: 1px solid purple;
+    background-color: rgb(0, 0, 0);
+    animation:containerAnimation ;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+.button{
+    margin: 0 auto;
+    align-self: center;
+    height: 5vh;
+    width: 10vw;
+    cursor: pointer;
+    font-family: 'Righteous', cursive;
+    box-shadow: 2px 2px 2px;
+
+}
+
+
+.buttonAni{
+    margin: 0 auto;
+    align-self: center;
+    height: 5vh;
+    width: 10vw;
+    cursor: pointer;
+    font-family: 'Righteous', cursive;
+    animation:btnAnimation ;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes btnAnimation{
+
+  10%{
+  height: 10vh;
+    
+  }
+  40%{
+  height:20vw
+    
+  }
+  60%{
+    height:30vw
+    
+  }
+    63%{
+        height: 5vh;
+    }
+    65%{
+        height: 3vh;
+    }
+    67%{
+        height: 5vh;
+    }
+    69%{
+        height: 3vh;
+    }
+    71%{
+        height: 5vh;
+    }
+    73%{
+        height: 4vh;
+    }
+    75%{
+        height: 5vh;
+    }
+    77%{
+        height: 4vh;
+    }
+    79%{
+        height: 5vh;
+    }
+    81%{
+        height: 4vh;
+    }
+    83%{
+        height: 5vh;
+    }
+}
+@keyframes containerAnimation{
+
+  40%{
+    border-radius: 0%;
+    
+  }
+  60%{
+    border-radius: 50%;
+
+  }
+  65%{
+        border-radius: 0%;
+    }
+  70%{
+      
+
+    }
+}

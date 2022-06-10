@@ -9,6 +9,7 @@ import About from "./components/about/About";
 import Login from "./components/login/login/Login";
 import CreateUser from "./components/login/createUser/CreateUser";
 import { useState } from "react";
+import Buttons from "./components/displayComponents/buttons/Buttons";
 
 function App() {
   const [user, setUser] = useState({});
@@ -22,6 +23,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/login' element={<Login />} />
         <Route path='/createUser' element={<CreateUser />} />
+        <Route path='/buttons' element={<Buttons />} />
       </Routes>
 
       <Footer />
