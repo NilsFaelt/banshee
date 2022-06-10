@@ -1,15 +1,19 @@
 .container{
     margin: 0 auto;
-    margin-top: 5vh;
+    margin-top: 10vh;
     margin-bottom: 30vh;
+    padding-bottom: 10vh;
     display: flex;
     flex-direction: column;
-    width: 80vw;
+    width: 100vw;
+    background-image: url('https://images.unsplash.com/photo-1562523699-455ffb7f37b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
     height: auto;
   
 }
 .title{
     margin: 0 auto;
+    padding-top: 5vh;
+    color: white;
     font-family: 'Bebas Neue', cursive;;
     text-decoration: underline purple;
 }
@@ -22,8 +26,8 @@
     width: 30vw;
     border: 1px solid rgb(220, 204, 29);
     border-radius: 2px;
-    background-color: rgb(202, 230, 251);
-    box-shadow: 1px 1px 1px ;
+    background-color: rgba(250, 236, 88, 0.038);
+    box-shadow: 10px 10px 10px ;
 }
 .inputContainer{
     margin: 0 auto;

@@ -186,7 +186,7 @@ const Home = () => {
                   marginBottom: "20vh",
                 }}
               >
-                Make sure to give a go.
+                Make sure to give it a go.
               </p>
             </a>
           </div>

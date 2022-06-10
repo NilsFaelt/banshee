@@ -78,7 +78,7 @@
 @keyframes mailAnimation{
 
     0%{
-        color: rgb(0, 0, 0);
+        color: yellow;
         transform: rotate(180deg);
         margin-right:60%;
         margin-top: 30%;
@@ -86,7 +86,7 @@
       100%{
           margin-left:50%;
           margin-top: -50%;
-          color: rgb(183, 146, 252);
+          color: yellow;
       }
   }
 
