@@ -16,7 +16,7 @@
     gap: 2vw;
     margin-left: 0vw;
     max-height: auto;
-    max-width: 30vw;
+    max-width: auto;
     display: flex;
     flex-direction: column;
     margin-bottom: 50vh;
@@ -48,6 +48,12 @@
     width:30vw ;
     margin-top: 3vh;
     border: 1px solid white;
+}
+.mainTitle{
+    margin-top: 2vh;
+    text-align: center;
+    text-decoration: underline ;
+    font-family: 'Bebas Neue', cursive;
 }
 .title{ 
     color: white;

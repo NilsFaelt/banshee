@@ -12,6 +12,7 @@ const Home = () => {
     <main className={Styles.home}>
       <div className={Styles.sectionContainer}>
         <hr className={Styles.hrTwo} />
+        <h1 className={Styles.mainTitle}>RANDOM INSPIRATION FROM THE WEB</h1>
         <div className={Styles.innerSectionContainer}>
           <section className={Styles.section}>
             <a href='https://the-goonies.webflow.io/#home' target='_blank'>
