@@ -1,12 +1,12 @@
-import { useEffect, useState } from "react";
 import Styles from "./contact.module.css";
 import { MailOpenIcon } from "@heroicons/react/outline";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../../firebase-config";
+import { useState } from "react";
 
 const Contact = ({ user }) => {
+  const [textAreaInput, setTextAreaInput] = useState("");
   const [fillMail, setFillMail] = useState(false);
-
   const [sendMailIcon, setSendMailIcon] = useState(false);
   const [wrongMail, setWrongMail] = useState(false);
   const [input, setInput] = useState({ email: "", confirm: "" });
@@ -22,6 +22,7 @@ const Contact = ({ user }) => {
     if (input.email === input.confirm) {
       setSendMailIcon(true);
       setInput({ email: "", confirm: "" });
+      setTextAreaInput("");
       setTimeout(() => {
         setSendMailIcon(false);
       }, 5000);
@@ -76,7 +77,9 @@ const Contact = ({ user }) => {
             </p>
           ) : null}
           <textarea
+            onChange={(e) => setTextAreaInput(e.target.value)}
             className={Styles.textarea}
+            value={textAreaInput}
             required
             name=''
             id=''

@@ -4,7 +4,8 @@
     width: 90vw;
     min-height:  30vh;
     border: 1px solid purple;
-    background-color: rgb(0, 0, 0);
+    background-image: url('https://images.unsplash.com/photo-1654885506947-fe5280d8e0ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+    /* background-color: rgb(0, 0, 0); */
   
 }
 .containerAnimation{
@@ -13,7 +14,7 @@
     width: 90vw;
     min-height:  30vh;
     border: 1px solid purple;
-    background-color: rgb(0, 0, 0);
+    background-image: url('https://images.unsplash.com/photo-1654885506947-fe5280d8e0ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
     animation:containerAnimation ;
     animation-duration: 6s;
     animation-fill-mode: forwards;

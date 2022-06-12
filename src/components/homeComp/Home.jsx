@@ -63,6 +63,13 @@ const Home = () => {
             <a
               target='_blank'
               className={Styles.websiteLinks}
+              href='https://bstd.ru/en/'
+            >
+              BSTD
+            </a>
+            <a
+              target='_blank'
+              className={Styles.websiteLinks}
               href='https://www.loftgarten.co/'
             >
               LOFTGARDEN
@@ -108,13 +115,6 @@ const Home = () => {
               href='https://longshotfeatures.com/'
             >
               LONGSHOTFEATURES
-            </a>
-            <a
-              target='_blank'
-              className={Styles.websiteLinks}
-              href='https://bstd.ru/en/'
-            >
-              BSTD
             </a>
           </section>
         </div>
