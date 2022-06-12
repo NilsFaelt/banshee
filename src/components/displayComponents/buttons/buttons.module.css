@@ -1,13 +1,20 @@
 .container{
     display: flex;
     flex-direction: column;
-    gap: 5vh;
+    gap: 3vh;
     width: 100vw;
     height: auto;
+    margin-bottom: 50vh;
 }
 .title{
     margin: 0 auto;
     font-family: 'Bebas Neue', cursive;
     text-decoration: underline purple;
     margin-top: 2vh;
+}
+.componentTitle{
+    margin: 0 auto;
+    font-size: 1.4vw;
+    text-decoration: underline;
+    font-family: 'Architects Daughter', cursive;
 }
