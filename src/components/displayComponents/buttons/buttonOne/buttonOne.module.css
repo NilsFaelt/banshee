@@ -110,3 +110,51 @@
 
     }
 }
+
+@media screen and (max-width: 600px) {
+    @keyframes btnAnimation{
+
+        10%{
+            height: 10vh;
+              
+            }
+            60%{
+            height: 60vh;
+              
+            }
+              63%{
+                  height: 5vh;
+              }
+              65%{
+                  height: 3vh;
+              }
+              67%{
+                  height: 5vh;
+              }
+              69%{
+                  height: 3vh;
+              }
+              71%{
+                  height: 5vh;
+              }
+              73%{
+                  height: 4vh;
+              }
+              75%{
+                  height: 5vh;
+              }
+              77%{
+                  height: 4vh;
+              }
+              79%{
+                  height: 5vh;
+              }
+              81%{
+                  height: 4vh;
+              }
+              83%{
+                  height: 5vh;
+              }
+          }
+    }
+  
