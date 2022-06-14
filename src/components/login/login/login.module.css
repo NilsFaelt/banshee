@@ -49,8 +49,7 @@
 }
 .btnContainer{
     margin: 0 auto;
-    margin-top: 1vh;
-    
+    margin-top: 1vh;  
 }
 
 @media screen and (max-width: 750px) {

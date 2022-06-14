@@ -94,6 +94,7 @@
     .container{
           margin: 0 auto;
           margin-top: 5vh;
+          
     }
     .title{
       text-align: center;
@@ -112,9 +113,13 @@
         width:50vw;
       
     }
+ 
     
   }
   @media screen and (max-width: 500px) {
+    .container{
+        margin-top: 5vh;
+  }
     .form{
         width:70vw;
     }
@@ -124,4 +129,5 @@
     .textarea{
         width: 70vw;
     }
+    
   }
