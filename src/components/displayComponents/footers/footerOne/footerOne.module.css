@@ -1,0 +1,63 @@
+.container{
+    text-align: center;
+    width: 100vw;
+    height: 20vh;
+    background-color: black;
+}
+.cog{
+    margin-top: 5vh;
+    width: calc(30px + 3vw);
+    color: white;
+    cursor: pointer;
+}
+.cogAni{
+    margin-top: 5vh;
+    width: calc(30px + 3vw);
+    color: white;
+    cursor: pointer;
+    animation:cogAnimation  10s   ;
+}
+.cogTwo{
+    position: absolute;
+    margin-top: 3vh;
+    margin-left: -1.4vw;
+    width: calc(30px + 3vw);
+    color: white;
+    cursor: pointer;
+ 
+}
+.cogTwoAni{
+    position: absolute;
+    margin-top: 3vh;
+    margin-left: -1.4vw;
+    width: calc(30px + 3vw);
+    color: white;
+    cursor: pointer;
+    animation:cogAnimationTwo  10s;
+  
+}
+
+
+@keyframes cogAnimation{
+    100%{
+        margin-left: -130vw;
+        }
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+}
+@keyframes cogAnimationTwo{
+ 
+    100%{
+    margin-left: -0.vw;
+    }
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(-360deg);
+      }
+}

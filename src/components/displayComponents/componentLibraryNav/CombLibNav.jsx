@@ -13,7 +13,7 @@ const CombLibNav = () => {
       <Link className={Styles.link} to={"/components"}>
         menus
       </Link>
-      <Link className={Styles.link} to={"/components"}>
+      <Link className={Styles.link} to={"/footers"}>
         Footers
       </Link>
       <Link className={Styles.link} to={"/components"}>

@@ -10,6 +10,7 @@ import Login from "./components/login/login/Login";
 import CreateUser from "./components/login/createUser/CreateUser";
 import { useState } from "react";
 import Buttons from "./components/displayComponents/buttons/Buttons";
+import Footers from "./components/displayComponents/footers/footers";
 
 function App() {
   const [user, setUser] = useState({});
@@ -24,6 +25,7 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/createUser' element={<CreateUser />} />
         <Route path='/buttons' element={<Buttons />} />
+        <Route path='/footers' element={<Footers />} />
       </Routes>
 
       <Footer />
