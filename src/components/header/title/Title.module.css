@@ -65,3 +65,13 @@
 80%{background-color: rgb(86, 38, 182);}
 80%{background-color: rgb(183, 146, 252);}
 }
+
+@media screen and (max-width: 500px) {
+    .container{
+        width: 40vw;
+        height: 6vh;
+    }
+    .title{
+        font-size: 8vw;       
+    }
+}

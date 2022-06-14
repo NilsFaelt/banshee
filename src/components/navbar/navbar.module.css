@@ -21,7 +21,7 @@
 }
 .links{
     color: black;
-    font-size:2.3vh;
+    font-size: calc(12px + 0.5vw);
     text-decoration: underline;
     font-family: 'Bebas Neue', cursive;;
 }
@@ -29,7 +29,7 @@
     display: flex;
     align-items: center;
     color: black;
-    font-size:2.3vh;
+    font-size: calc(12px + 0.5vw);
     text-decoration: underline;
     font-family: 'Bebas Neue', cursive;
     margin-bottom: 1vh;
@@ -95,19 +95,33 @@
     }
   }
 @media screen and (max-width: 750px) {
-    .links {
-    font-size: 1.5vh;
+    .container{
+        width: 100vw;
+        margin-left: 10vw;
     }
+  
+    .linkContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0 auto;
+        margin-left: 2vw;
+        width: 95vw;
+    }
+    .hr{
+        border: solid 0.5px black;
+        width: 98vw;
+    }
+ 
     .userLink{
-        font-size: 1.5vh;
+        font-size: calc(12px + 0.5vw);
     }
     .userIcon{
-        height: 2vh;
+        height: 3vh;
         margin-left: 4vw;
     }
     .hr{
         border: solid 0.5px black;
-   
     }
     
   }

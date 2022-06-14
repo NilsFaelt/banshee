@@ -5,3 +5,11 @@
     width: 100vw;
     height: auto;
 }
+
+@media screen and (max-width: 750px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+  
+    }
+}
