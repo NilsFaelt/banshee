@@ -52,3 +52,12 @@
     margin-top: 1vh;
     
 }
+
+@media screen and (max-width: 750px) {
+    .loginForm{
+   width: 60vw;
+    }
+    .inputContainer{
+   width: 60vw;
+    }
+}

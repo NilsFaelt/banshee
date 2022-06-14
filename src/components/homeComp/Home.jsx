@@ -53,9 +53,9 @@ const Home = () => {
               <p className={Styles.textCursive}>Love them backenders</p>
             </a>
           </section>
-          <section className={Styles.section}>
+          <section className={Styles.sectionWebLinks}>
             <h3
-              className={Styles.title}
+              className={Styles.webLinkTitle}
               style={{ marginBottom: "4vh", marginTop: "1vh" }}
             >
               Badass websites

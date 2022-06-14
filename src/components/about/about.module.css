@@ -43,7 +43,7 @@
     margin-top: 7vh;
     text-decoration: underline purple;
     text-align: center;
-    font-size: 2vw;
+    font-size: calc(16px + 1vw);
     font-family: 'Bebas Neue', cursive;
 }
 .secondTitle{
@@ -64,3 +64,25 @@
     font-family: 'Architects Daughter', cursive;
     color: rgb(0, 0, 0);
 }
+@media screen and (max-width: 750px) {
+    .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0vh;
+    gap: 3vh;
+    }
+ 
+    .storyContainer{
+    width: 70vw;
+    margin-left: 0vw;
+    margin-right: 0vw;
+    margin-top: 3vh;
+    }
+    .goalsContainer{
+    width: 70vw;
+    margin-right: 0vw;
+    margin-bottom: 3vh;
+    }    
+  }
