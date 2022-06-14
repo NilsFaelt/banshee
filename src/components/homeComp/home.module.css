@@ -13,27 +13,30 @@
     width: 94vw;
 }
 .sectionContainer{
-    gap: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
     margin-left: 0vw;
     max-height: auto;
     max-width: auto;
-    display: flex;
-    flex-direction: column;
     margin-bottom: 50vh;
 }
 .innerSectionContainer{
-    padding-top: 5vh;
     display: flex;
     flex-direction: row;
+    gap: 6vw;
+    padding-top: 5vh;
+    display: flex;
     width: 80vw;
 }
 .section{
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    width: 25vw;
     margin: 0 auto;
     background-color: rgba(14, 14, 14, 0.939);
-    margin-left: 5vw;
+    margin-left: 0vw;
     padding: 2vw;
     padding-bottom: 8vh;
     border: 1px solid yellow;
@@ -44,7 +47,7 @@
     width: 30vw;
     margin: 0 auto;
     background-color: rgba(14, 14, 14, 0.939);
-    margin-left: 5vw;
+    margin-left: 3vw;
     padding: 2vw;
     padding-bottom: 8vh;
     border: 1px solid yellow;
@@ -60,7 +63,7 @@
     border: 1px solid white;
 }
 .mainTitle{
-    font-size:calc(15px + 1.4vw);
+    font-size:calc(10px + 1.4vw);
     margin-top: 2vh;
     text-align: center;
     text-decoration: underline ;
@@ -92,7 +95,7 @@
     margin-top: 7vh;
     text-decoration: underline;
     text-align: center;
-    font-size: 4vw;
+    font-size:calc(12px + 0.7vw) ;
     font-family: 'Bebas Neue', cursive;
 }
 .websiteLinks{
@@ -136,9 +139,10 @@
         display: flex;
         gap: 5vh;
         flex-direction: column-reverse;
-        width: 80vw;
+        width: 100vw;
     }
     .section{
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         width: 80vw;

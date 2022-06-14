@@ -13,6 +13,16 @@ const Home = () => {
       <div className={Styles.sectionContainer}>
         <hr className={Styles.hrTwo} />
         <h1 className={Styles.mainTitle}>RANDOM INSPIRATION FROM THE WEB</h1>
+        <p
+          className={Styles.textCursive}
+          style={{
+            textDecoration: "underline",
+            color: "black",
+            marginBottom: "2vh",
+          }}
+        >
+          Some Fun beautiful and crazy websites i found out on the WWW.
+        </p>
         <div className={Styles.innerSectionContainer}>
           <section className={Styles.section}>
             <a href='https://the-goonies.webflow.io/#home' target='_blank'>

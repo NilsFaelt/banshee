@@ -3,7 +3,6 @@
     margin: 0 auto;
     width: 90vw;
     min-height:  30vh;
-    /* border: 1px solid purple; */
     background-size: cover;
 
 
@@ -13,7 +12,6 @@
     margin: 0 auto;
     width: 90vw;
     min-height:  30vh;
-    /* border: 1px solid purple; */
     animation:containerAnimation ;
     animation-duration: 8s;
     animation-fill-mode: forwards;
@@ -48,6 +46,7 @@
 
     40%{
         box-shadow: 70px 70px 70px;
+    
     }
  
     60%{
