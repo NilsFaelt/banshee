@@ -50,6 +50,7 @@
     border: 1px solid white;
 }
 .mainTitle{
+    font-size:calc(15px + 1.4vw);
     margin-top: 2vh;
     text-align: center;
     text-decoration: underline ;
