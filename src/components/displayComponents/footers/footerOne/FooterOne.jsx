@@ -8,6 +8,8 @@ const FooterOne = () => {
     <footer onClick={() => setActivate(!activate)} className={Styles.container}>
       <CogIcon className={activate ? Styles.cog : Styles.cogAni} />;
       <CogIcon className={activate ? Styles.cogTwo : Styles.cogTwoAni} />;
+      <CogIcon className={activate ? Styles.cogThree : Styles.cogThreeAni} />;
+      <h4 className={activate ? Styles.title : Styles.titleAni}>Hello World</h4>
     </footer>
   );
 };
