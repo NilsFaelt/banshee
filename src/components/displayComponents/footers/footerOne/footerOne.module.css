@@ -6,16 +6,16 @@
 }
 .title{
     color: white;
-    text-decoration: underline;
+    text-decoration: underline yellow;
     font-family: 'Bebas Neue', cursive;
     font-size: calc(10px + 1vw);
-       opacity: 0;
+    opacity: 0;
 }
 .titleAni{
     color: white;
-    text-decoration: underline;
+    text-decoration: underline yellow;
     font-family: 'Bebas Neue', cursive;
-    font-size: calc(10px + 1vw);
+    font-size: calc(12px + 1.2vw);
     animation:titleAnimation  20s infinite;
     opacity: 0;
 
