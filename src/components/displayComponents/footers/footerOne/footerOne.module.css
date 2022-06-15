@@ -82,11 +82,11 @@
     margin-right: 0vw;
   }
   51%{
-    margin-right: 0vw;
+    margin-left: 0vw;
   }
 100%{
     opacity: 1;
-    margin-right: 120vw;
+    margin-left: -120vw;
 }
 }
 
