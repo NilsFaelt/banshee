@@ -11,6 +11,9 @@ import CreateUser from "./components/login/createUser/CreateUser";
 import { useState } from "react";
 import Buttons from "./components/displayComponents/buttons/Buttons";
 import Footers from "./components/displayComponents/footers/footers";
+import Forms from "./components/displayComponents/forms/Forms";
+import Menus from "./components/displayComponents/menus/Menus";
+import Specials from "./components/displayComponents/specials/Specials";
 
 function App() {
   const [user, setUser] = useState({});
@@ -26,6 +29,9 @@ function App() {
         <Route path='/createUser' element={<CreateUser />} />
         <Route path='/buttons' element={<Buttons />} />
         <Route path='/footers' element={<Footers />} />
+        <Route path='/forms' element={<Forms />} />
+        <Route path='/menus' element={<Menus />} />
+        <Route path='/specials' element={<Specials />} />
       </Routes>
 
       <Footer />
