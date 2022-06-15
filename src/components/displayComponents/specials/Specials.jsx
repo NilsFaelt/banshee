@@ -6,6 +6,7 @@ const Specials = () => {
     <div className={Styles.container}>
       <h2 className={Styles.title}>Specials</h2>
       <CombLibNav />
+      <h2 className={Styles.componentsTitle}>Components to come</h2>
     </div>
   );
 };

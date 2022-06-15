@@ -10,7 +10,7 @@ const FooterOne = () => {
       <CogIcon className={activate ? Styles.cogTwo : Styles.cogTwoAni} />;
       <CogIcon className={activate ? Styles.cogThree : Styles.cogThreeAni} />;
       <h4 className={activate ? Styles.title : Styles.titleAni}>Banshee</h4>
-      <hr />
+      <hr style={{}} />
     </footer>
   );
 };

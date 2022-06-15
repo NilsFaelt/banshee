@@ -174,4 +174,7 @@
     .websiteLinks:hover{
         color: white;
     }
+    .section{
+        width: 90vw;
+    }
 }
