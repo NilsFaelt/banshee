@@ -42,8 +42,9 @@ function App() {
 export default App;
 
 // mobile resposnive css
-// homepage inspiration sites
 // make mail contact work
 // make footer real¨
 // layout Forum
-// logedin user page
+// finish menu comp
+// fix cogs
+// fix menu delassus group

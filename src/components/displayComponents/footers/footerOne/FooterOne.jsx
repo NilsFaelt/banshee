@@ -6,9 +6,11 @@ const FooterOne = () => {
   const [activate, setActivate] = useState(true);
   return (
     <footer onClick={() => setActivate(!activate)} className={Styles.container}>
+      {/* <div className={Styles.cogDiv}> */}
       <CogIcon className={activate ? Styles.cog : Styles.cogAni} />;
       <CogIcon className={activate ? Styles.cogTwo : Styles.cogTwoAni} />;
       <CogIcon className={activate ? Styles.cogThree : Styles.cogThreeAni} />;
+      {/* </div> */}
       <h4 className={activate ? Styles.title : Styles.titleAni}>Banshee</h4>
       <hr style={{}} />
     </footer>

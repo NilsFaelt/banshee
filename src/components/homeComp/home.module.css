@@ -46,7 +46,7 @@
 .sectionWebLinks{
     display: flex;
     flex-direction: column;
-    width: 8vw;
+    width: auto;
     margin: 0 auto;
     background-color: rgba(14, 14, 14, 0.939);
     margin-left: 3vw;
