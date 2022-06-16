@@ -8,6 +8,9 @@ const Footers = () => {
       <h2 className={Styles.title}>Footers</h2>
       <CombLibNav />
       <h3 className={Styles.footersTitle}>Click the cogs</h3>
+      <p className={Styles.textCursive}>
+        Cogs only work in place, mind the screen size
+      </p>
       <FooterOne />
     </div>
   );

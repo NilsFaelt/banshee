@@ -19,3 +19,9 @@
     font-family: 'Bebas Neue', cursive;
     text-decoration: underline;
 }
+.textCursive{
+    text-align: center;
+    margin-top: 0vh;
+    font-family: 'Architects Daughter', cursive;
+    color: rgb(0, 0, 0);
+}

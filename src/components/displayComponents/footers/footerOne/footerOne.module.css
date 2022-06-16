@@ -20,10 +20,7 @@
     opacity: 0;
 
 }
-.cogDiv{
-  margin: 0 auto;
-  width: 100px;
-}
+
 .cog{
     margin-top: 5vh;
     width: calc(30px + 3vw);
@@ -112,4 +109,63 @@
       to {
         transform: rotate(-360deg);
       }
+}
+@media screen and (max-width: 1350px) {
+  .cog{
+    margin-top: 5vh;
+    width: calc(30px + 3vw);
+    color: white;
+    cursor: pointer;
+}
+.cogAni{
+    margin-top: 5vh;
+    width: calc(30px + 3vw);
+    color: white;
+    cursor: pointer;
+    animation:cogAnimation  10s infinite  ;
+}
+.cogTwo{
+
+    margin-left: 12.4vw;
+
+}
+.cogTwoAni{
+    margin-left: 12.4vw;
+  
+}
+.cogThree{
+    margin-left: -24.6vw;
+
+}
+.cogThreeAni{
+    margin-left: -24.6vw;  
+}
+  @keyframes cogAnimation{
+  
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+}
+@keyframes cogAnimationTwo{
+ 
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(0);
+      }
+}
+@keyframes titleAnimation{
+  0%{
+  opacity: 0;
+  }
+
+100%{
+    opacity: 0;
+
+}
+}
 }
