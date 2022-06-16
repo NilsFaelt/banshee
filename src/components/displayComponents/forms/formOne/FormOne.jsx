@@ -4,14 +4,12 @@ import Styles from "./formOne.module.css";
 const FormOne = () => {
   const [activate, setActivate] = useState(true);
   const [btnActivate, setBtnActivate] = useState(true);
-  const [userTitle, setUserTitle] = useState("");
-  const [username, setUsername] = useState("Username");
-  const [password, setPassword] = useState("Password");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   const handlClick = (e) => {
     e.preventDefault();
     setBtnActivate(false);
-    setUserTitle(username);
     setUsername("");
     setPassword("");
   };
@@ -19,8 +17,7 @@ const FormOne = () => {
   if (!btnActivate) {
     setTimeout(() => {
       setBtnActivate(true);
-      setUserTitle("");
-    }, 8000);
+    }, 6000);
   }
 
   return (
