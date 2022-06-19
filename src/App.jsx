@@ -10,7 +10,7 @@ import Login from "./components/login/login/Login";
 import CreateUser from "./components/login/createUser/CreateUser";
 import { useState } from "react";
 import Buttons from "./components/displayComponents/buttons/Buttons";
-import Footers from "./components/displayComponents/footers/footers";
+import Footers from "./components/displayComponents/footers/Footers";
 import Forms from "./components/displayComponents/forms/Forms";
 import Menus from "./components/displayComponents/menus/Menus";
 import Specials from "./components/displayComponents/specials/Specials";
