@@ -9,7 +9,7 @@ const Footers = () => {
       <CombLibNav />
       <h3 className={Styles.footersTitle}>Click the cogs</h3>
       <p className={Styles.textCursive}>
-        Cogs only work in place, mind the screen size
+        Cogs only work in place, mind the screen size.
       </p>
       <FooterOne />
     </div>
