@@ -48,3 +48,4 @@ export default App;
 // finish menu comp
 // fix cogs
 // fix menu delassus group
+//buttons mobile

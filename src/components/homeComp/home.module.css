@@ -35,13 +35,14 @@
 .section{
     display: flex;
     flex-direction: column;
-    width: 25vw;
+    width: 30vw;
     margin: 0 auto;
     background-color: rgba(14, 14, 14, 0.939);
     margin-left: 5vw;
     padding: 2vw;
     padding-bottom: 8vh;
     border: 1px solid yellow;
+    border-radius: 5px;
 }
 .sectionWebLinks{
     display: flex;
@@ -53,6 +54,7 @@
     padding: 2vw;
     padding-bottom: 8vh;
     border: 1px solid yellow;
+    border-radius: 5px;
 }
 .section:hover{
     background-color: black;
@@ -177,4 +179,5 @@
     .section{
         width: 90vw;
     }
+
 }
