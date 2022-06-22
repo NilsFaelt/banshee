@@ -10,9 +10,28 @@ const CreateUser = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [email, setEmail] = useState("");
   const [confirmEmail, setConfirmEmail] = useState("");
+  const [activate, setActivate] = useState(false);
+  const [confirmCreatedAccount, setConfirmCreatedAccount] = useState(null);
+
+  if (activate) {
+    setTimeout(() => {
+      setActivate(false);
+    }, 100);
+  }
+
+  console.log(confirmCreatedAccount);
 
   const register = async (e) => {
     e.preventDefault();
+    if (
+      password === "" ||
+      confirmPassword === "" ||
+      email === "" ||
+      confirmEmail === ""
+    ) {
+      setActivate(true);
+      return;
+    }
     if (
       password &&
       password === confirmPassword &&
@@ -20,7 +39,16 @@ const CreateUser = () => {
       email === confirmEmail
     ) {
       try {
-        await createUserWithEmailAndPassword(auth, email, password);
+        const test = await createUserWithEmailAndPassword(
+          auth,
+          email,
+          password
+        );
+        if (test.user) {
+          alert("created");
+          setConfirmCreatedAccount("");
+        }
+        console.log(test.user.accessToken, "testttttttt");
         navigate("/");
       } catch (err) {
         console.log(
@@ -31,15 +59,18 @@ const CreateUser = () => {
       setConfirmPassword("");
       setEmail("");
       setConfirmEmail("");
-    } else {
-      alert("Your mail or password didnt match");
     }
+    alert("Make sure email and password is correcrt");
   };
 
   return (
     <div className={Styles.container}>
       <h2 className={Styles.title}>Create account</h2>
-      <form className={Styles.loginForm} action=''>
+      <form
+        required
+        className={activate ? Styles.formAlert : Styles.loginForm}
+        action=''
+      >
         <div className={Styles.inputContainer}>
           <label htmlFor=''>EMAIL:</label>
           <input
