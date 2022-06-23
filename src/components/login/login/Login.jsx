@@ -33,7 +33,11 @@ const Login = () => {
       console.log(auth.accessToken, "tokennnnnnnnnn");
       return;
     } catch (err) {
-      setAlertBox(true);
+      if (email !== "" && password !== "") {
+        setEmail("");
+        setPassword("");
+        setAlertBox(true);
+      }
       console.log(
         `Something went wromg when trying to login, err ${err.message}`
       );
