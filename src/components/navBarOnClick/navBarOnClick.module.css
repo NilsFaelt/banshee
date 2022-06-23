@@ -1,0 +1,74 @@
+.container{
+    margin: 0 auto;
+    margin-right: 3vw;
+    margin-top: 0vh;
+    border-radius: 2px;
+    background-color: rgba(246, 209, 2, 0);
+    width: 20vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+/* .userIcon{
+    height: 4vh;
+    margin-left: 0vw;
+} */
+.linkContainer{
+    cursor: pointer;
+    margin-top: 15vh;
+    display: flex;
+    gap: 5vh;
+    flex-direction: column;
+    justify-content: start;
+    background-color: rgba(58, 80, 73, 0);
+    animation:closeLinksAni  1s forwards;
+}
+.linkContainerClose{
+    background-color: rgba(0, 0, 0, 0);
+}
+.links{
+    color: rgb(255, 255, 255);
+    font-size: calc(25px + 0.5vw);
+    text-decoration: underline;
+    font-family: 'Bebas Neue', cursive;;
+    animation:closeLinksAni  2s forwards;
+}
+.userLink{
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: calc(25px + 0.5vw);
+    text-decoration: underline;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 1vh;
+    animation:closeLinksAni  2s forwards;
+}
+
+.links:hover{
+  color: aqua;
+  text-decoration: underline purple; 
+}
+.logout:hover{
+    color: aqua;
+    text-decoration: underline purple;
+}
+.userLink:hover{
+    color: aqua;
+    text-decoration: underline purple;
+
+}
+
+
+@keyframes closeLinksAni{
+  0%{
+   color: rgba(255, 255, 255, 0);
+   font-size: calc(0px + 0.0vw);
+  }
+  100%{
+   background-color: rgba(0, 0, 0, 0);
+   font-size: calc(25px + 0.5vw);
+  }
+}
+

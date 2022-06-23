@@ -14,11 +14,13 @@ import Footers from "./components/displayComponents/footers/Footers";
 import Forms from "./components/displayComponents/forms/Forms";
 import Menus from "./components/displayComponents/menus/Menus";
 import Specials from "./components/displayComponents/specials/Specials";
+import Menu from "./components/menu/Menu";
 
 function App() {
   const [user, setUser] = useState({});
   return (
     <div className='App'>
+      <Menu user={user} setUser={setUser} />
       <Header user={user} setUser={setUser} />
       <Routes>
         <Route path='/' element={<Home />} />
