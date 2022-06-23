@@ -16,6 +16,7 @@ const Contact = ({ user }) => {
       [e.target.name]: e.target.value,
     });
   };
+
   const handleClick = (e) => {
     e.preventDefault();
     setFillMail(false);

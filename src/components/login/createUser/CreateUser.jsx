@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Styles from "./createUser.module.css";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../../firebase-config";
+import PopUp from "../../popup/PopUp";
 
 const CreateUser = () => {
   const navigate = useNavigate();
@@ -12,6 +13,8 @@ const CreateUser = () => {
   const [confirmEmail, setConfirmEmail] = useState("");
   const [activate, setActivate] = useState(false);
   const [confirmCreatedAccount, setConfirmCreatedAccount] = useState(null);
+  const [emailCreated, setEmailCreated] = useState(false);
+  const [alertBox, setAlertBox] = useState(false);
 
   if (activate) {
     setTimeout(() => {
@@ -45,14 +48,14 @@ const CreateUser = () => {
           password
         );
         if (test.user) {
-          alert("created");
+          setEmailCreated(true);
           setConfirmCreatedAccount("");
           setPassword("");
           setConfirmPassword("");
           setEmail("");
           setConfirmEmail("");
           console.log(test.user);
-          navigate("/");
+          // navigate("/");
           return;
         }
       } catch (err) {
@@ -60,14 +63,12 @@ const CreateUser = () => {
           `Something went wrong when tyrying to create user, err ${err.message}`
         );
       }
-      setPassword("");
-      setConfirmPassword("");
-      setEmail("");
-      setConfirmEmail("");
     }
-    alert(
-      "Make sure email and password is correcrt, password needs to be minimum 8 charachters"
-    );
+    setAlertBox(true);
+    setPassword("");
+    setConfirmPassword("");
+    setEmail("");
+    setConfirmEmail("");
   };
 
   return (
@@ -125,6 +126,22 @@ const CreateUser = () => {
           </button>
         </div>
       </form>
+      {emailCreated ? (
+        <PopUp
+          close={setEmailCreated}
+          title={"Account created"}
+          text={"Welcome to banshee"}
+        />
+      ) : null}
+      {alertBox ? (
+        <PopUp
+          close={setAlertBox}
+          title={"Something went wrong"}
+          text={
+            "Make sure email and password is correcrt, password needs to be minimum 8 charachters"
+          }
+        />
+      ) : null}
     </div>
   );
 };

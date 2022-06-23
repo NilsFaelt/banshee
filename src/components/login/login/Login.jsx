@@ -3,14 +3,26 @@ import { auth } from "../../../firebase-config";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Styles from "./login.module.css";
+import PopUp from "../../popup/PopUp";
 
 const Login = () => {
   const navigate = useNavigate();
-  const [user, setUSer] = useState({});
+  const [user, setUSer] = useState();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [activate, setActivate] = useState(true);
+  const [alertBox, setAlertBox] = useState(false);
+
+  if (!activate) {
+    setTimeout(() => {
+      setActivate(true);
+    }, 100);
+  }
 
   const login = async (e) => {
+    if (email === "" || password === "") {
+      setActivate(false);
+    }
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
@@ -19,7 +31,9 @@ const Login = () => {
       setPassword("");
       navigate("/");
       console.log(auth.accessToken, "tokennnnnnnnnn");
+      return;
     } catch (err) {
+      setAlertBox(true);
       console.log(
         `Something went wromg when trying to login, err ${err.message}`
       );
@@ -29,7 +43,10 @@ const Login = () => {
   return (
     <div className={Styles.container}>
       <h2 className={Styles.title}>Login</h2>
-      <form className={Styles.loginForm} action=''>
+      <form
+        className={activate ? Styles.loginForm : Styles.loginFormAlert}
+        action=''
+      >
         <div className={Styles.inputContainer}>
           <label htmlFor=''>EMAIL:</label>
           <input
@@ -55,6 +72,13 @@ const Login = () => {
           </button>
         </div>
       </form>
+      {alertBox ? (
+        <PopUp
+          close={setAlertBox}
+          title={"Couldnt loggin"}
+          text={"Make sure email and password is corect"}
+        />
+      ) : null}
     </div>
   );
 };
