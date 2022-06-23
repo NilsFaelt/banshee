@@ -46,7 +46,12 @@ const Contact = ({ user }) => {
         ) : (
           <h2 className={Styles.title}>Contact us at banshee</h2>
         )}
-        <form onSubmit={(e) => handleClick(e)} className={Styles.form}>
+        <form
+          method='POST'
+          action='https://formsubmit.co/nils.faelt@gmail.com'
+          onSubmit={(e) => handleClick(e)}
+          className={Styles.form}
+        >
           <label className={Styles.label} htmlFor=''>
             Email:
           </label>
