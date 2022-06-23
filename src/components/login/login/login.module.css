@@ -71,9 +71,22 @@
 
 @media screen and (max-width: 750px) {
     .loginForm{
-   width: 60vw;
+   width: 80vw;
     }
     .inputContainer{
-   width: 60vw;
+   width: 80vw;
+    }
+    .loginFormAlert{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 4vh;
+        padding: 2vw;
+        width: 80vw;
+        border: 1px solid rgb(220, 204, 29);
+        border-radius: 2px;
+        background-color: rgb(0, 0, 0);
+        box-shadow: 10px 10px 10px ;
+    
     }
 }

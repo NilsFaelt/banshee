@@ -32,7 +32,7 @@
     margin: 0 auto;
     margin-top: 3vh;
     padding: 4vh;
-    width: 30vw;
+    width: 32vw;
     gap: 1vh;
 }
 .label{  
@@ -119,6 +119,7 @@
   @media screen and (max-width: 500px) {
     .container{
         margin-top: 5vh;
+        
   }
     .form{
         width:70vw;

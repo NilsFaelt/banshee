@@ -70,10 +70,22 @@
 }
 @media screen and (max-width: 750px) {
     .loginForm{
-  width: 70vw;
+     width: 80vw;
     }
 
     .inputContainer{
      width: 60vw;
+    }
+    .formAlert{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 4vh;
+        padding: 2vw;
+        width: 80vw;
+        border: 1px solid rgb(220, 204, 29);
+        border-radius: 2px;
+        background-color: rgba(0, 0, 0, 0.634);
+        box-shadow: 10px 10px 10px ;
     }
 }

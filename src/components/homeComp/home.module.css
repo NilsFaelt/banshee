@@ -42,7 +42,7 @@
     padding: 2vw;
     padding-bottom: 8vh;
     border: 1px solid yellow;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 .sectionWebLinks{
     display: flex;
@@ -51,10 +51,11 @@
     margin: 0 auto;
     background-color: rgba(14, 14, 14, 0.939);
     margin-left: 3vw;
+    margin-right: 2vw;
     padding: 2vw;
     padding-bottom: 8vh;
     border: 1px solid yellow;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 .section:hover{
     background-color: black;

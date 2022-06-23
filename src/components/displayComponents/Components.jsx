@@ -6,6 +6,8 @@ const Components = () => {
     <section className={Styles.container}>
       <h2 className={Styles.title}>Component library</h2>
       <CombLibNav />
+      <div className={Styles.innerContainer}></div>
+      <div className={Styles.innerContainer2}></div>
     </section>
   );
 };

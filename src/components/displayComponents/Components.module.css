@@ -11,3 +11,11 @@
     text-decoration: underline purple;
     margin-top: 2vh;
 }
+.innerContainer{
+    margin:  0 auto;
+    width: 50vw;
+    height: 30vh;
+    border: 1px solid black;
+    border-radius:  2px;
+    box-shadow: 2px 2px 2px;
+}
