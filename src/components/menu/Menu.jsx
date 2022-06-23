@@ -2,8 +2,7 @@ import { useState } from "react";
 import NavBarOnClick from "../navBarOnClick/NavBarOnClick";
 import Styles from "./menu.module.css";
 
-const Menu = ({ user, setUser }) => {
-  const [activateMenu, setActivateMenu] = useState(false);
+const Menu = ({ user, setUser, setActivateMenu, activateMenu }) => {
   return (
     <nav className={activateMenu ? Styles.container : Styles.containerOpen}>
       {activateMenu ? null : (
@@ -14,7 +13,7 @@ const Menu = ({ user, setUser }) => {
           activateMenu={activateMenu}
         />
       )}
-      Menu
+      <div></div>
     </nav>
   );
 };

@@ -15,12 +15,27 @@ import Forms from "./components/displayComponents/forms/Forms";
 import Menus from "./components/displayComponents/menus/Menus";
 import Specials from "./components/displayComponents/specials/Specials";
 import Menu from "./components/menu/Menu";
+import { MenuIcon } from "@heroicons/react/outline";
 
 function App() {
   const [user, setUser] = useState({});
+  const [activateMenu, setActivateMenu] = useState(true);
+
+  const closeMenu = () => {
+    setActivateMenu(false);
+    console.log("closes", activateMenu);
+  };
   return (
     <div className='App'>
-      <Menu user={user} setUser={setUser} />
+      <div onClick={() => closeMenu()}>
+        <MenuIcon className='menuIcon' />
+      </div>
+      <Menu
+        user={user}
+        setUser={setUser}
+        activateMenu={activateMenu}
+        setActivateMenu={setActivateMenu}
+      />
       <Header user={user} setUser={setUser} />
       <Routes>
         <Route path='/' element={<Home />} />
