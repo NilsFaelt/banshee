@@ -47,9 +47,14 @@ const CreateUser = () => {
         if (test.user) {
           alert("created");
           setConfirmCreatedAccount("");
+          setPassword("");
+          setConfirmPassword("");
+          setEmail("");
+          setConfirmEmail("");
+          console.log(test.user);
+          navigate("/");
+          return;
         }
-        console.log(test.user.accessToken, "testttttttt");
-        navigate("/");
       } catch (err) {
         console.log(
           `Something went wrong when tyrying to create user, err ${err.message}`
@@ -60,13 +65,16 @@ const CreateUser = () => {
       setEmail("");
       setConfirmEmail("");
     }
-    alert("Make sure email and password is correcrt");
+    alert(
+      "Make sure email and password is correcrt, password needs to be minimum 8 charachters"
+    );
   };
 
   return (
     <div className={Styles.container}>
       <h2 className={Styles.title}>Create account</h2>
       <form
+        type='submit'
         required
         className={activate ? Styles.formAlert : Styles.loginForm}
         action=''
