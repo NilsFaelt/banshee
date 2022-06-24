@@ -12,3 +12,10 @@
 .menuIcon:hover{
   color: turquoise;
 }
+@media screen and (max-width: 400px) {
+    .menuIcon{
+        width: calc(20px + 4.5vw);
+        top: 3vh;
+        right: 5vw;
+    }
+}

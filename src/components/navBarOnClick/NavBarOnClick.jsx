@@ -48,6 +48,9 @@ const NavBarOnClick = ({ user, setUser, setActivateMenu, activateMenu }) => {
         <Link onClick={closeNav} className={Styles.links} to={"/contact"}>
           Contact
         </Link>
+        <h2 onClick={closeNav} className={Styles.links} to={"/contact"}>
+          Close menu
+        </h2>
       </div>
     </nav>
   );
