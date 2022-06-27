@@ -1,7 +1,6 @@
 import "./App.css";
 import Header from "./components/header/Header";
 import { Routes, Route } from "react-router-dom";
-import Footer from "./components/footer/Footer";
 import Home from "./components/homeComp/Home";
 import Contact from "./components/contact/Contact";
 import Components from "./components/displayComponents/Components";
@@ -16,6 +15,7 @@ import Menus from "./components/displayComponents/menus/Menus";
 import Specials from "./components/displayComponents/specials/Specials";
 import Menu from "./components/menu/Menu";
 import { MenuIcon } from "@heroicons/react/outline";
+import FooterOne from "./components/displayComponents/footers/footerOne/FooterOne";
 
 function App() {
   const [user, setUser] = useState({});
@@ -50,8 +50,8 @@ function App() {
         <Route path='/menus' element={<Menus />} />
         <Route path='/specials' element={<Specials />} />
       </Routes>
-
-      <Footer />
+      <FooterOne />
+      {/* <Footer /> */}
     </div>
   );
 }

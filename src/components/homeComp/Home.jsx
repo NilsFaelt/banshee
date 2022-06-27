@@ -11,7 +11,6 @@ const Home = () => {
   return (
     <main className={Styles.home}>
       <div className={Styles.sectionContainer}>
-        {/* <hr className={Styles.hrTwo} /> */}
         <h1 className={Styles.mainTitle}>RANDOM INSPIRATION FROM THE WEB</h1>
         <p
           className={Styles.textCursive}
@@ -33,7 +32,11 @@ const Home = () => {
               </p>
               <Parallax
                 bgImage={goonies}
-                style={{ marginTop: "2vh", border: "solid 1px white " }}
+                style={{
+                  marginTop: "2vh",
+                  border: "solid 1px white ",
+                  borderRadius: "5px",
+                }}
               >
                 <div style={{ width: "30vw", height: "35vh" }}></div>
               </Parallax>
@@ -52,7 +55,11 @@ const Home = () => {
               </p>
               <Parallax
                 bgImage={shipsite}
-                style={{ marginTop: "2vh", border: "solid 1px white " }}
+                style={{
+                  marginTop: "2vh",
+                  border: "solid 1px white ",
+                  borderRadius: "5px",
+                }}
               >
                 <div style={{ width: "30vw", height: "35vh" }}></div>
               </Parallax>
