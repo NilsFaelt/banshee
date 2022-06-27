@@ -2,6 +2,9 @@
     margin: 0 ;
     padding: 0;
 }
+/* .App{
+    background-color: black;
+} */
 .menuIcon{
     position: absolute;
     width: calc(20px + 1.5vw);

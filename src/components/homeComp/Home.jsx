@@ -11,13 +11,13 @@ const Home = () => {
   return (
     <main className={Styles.home}>
       <div className={Styles.sectionContainer}>
-        <hr className={Styles.hrTwo} />
+        {/* <hr className={Styles.hrTwo} /> */}
         <h1 className={Styles.mainTitle}>RANDOM INSPIRATION FROM THE WEB</h1>
         <p
           className={Styles.textCursive}
           style={{
             textDecoration: "underline",
-            color: "black",
+            color: "white",
             marginBottom: "2vh",
           }}
         >
