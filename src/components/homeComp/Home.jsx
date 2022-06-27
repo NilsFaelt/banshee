@@ -208,6 +208,9 @@ const Home = () => {
               </p>
             </a>
           </div>
+          <h2 className={Styles.parallaxTitle} style={{ color: "black" }}>
+            Mind the screensize for the cogs
+          </h2>
         </div>
       </div>
       <PaperAirplaneIcon className={Styles.plane} />
