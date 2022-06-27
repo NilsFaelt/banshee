@@ -15,6 +15,7 @@
     animation:containerAnimation ;
     animation-duration: 8s;
     animation-fill-mode: forwards;
+
 }
 .button{
     margin: 0 auto;
