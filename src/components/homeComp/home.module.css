@@ -7,6 +7,7 @@
     padding-bottom: 40vh;
     width: 100vw;
     height: auto;
+    background-color: black;
 }
 .hrTwo{
     margin-left: 3vw;
@@ -33,6 +34,7 @@
     background-image: url('https://images.unsplash.com/photo-1554316224-0ed275ff54ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80');
 }
 .section{
+    
     display: flex;
     flex-direction: column;
     width: 30vw;
@@ -62,6 +64,11 @@
     border: 1px solid purple;
     box-shadow: 10px 10px 10px;
 }
+.sectionWebLinks:hover{
+    background-color: black;
+    border: 1px solid purple;
+    box-shadow: 10px 10px 10px;
+}
 .img{
     width:30vw ;
     margin-top: 3vh;
@@ -73,6 +80,7 @@
     text-align: center;
     text-decoration: underline ;
     font-family: 'Bebas Neue', cursive;
+    color: white;
 }
 .title{ 
     color: white;
@@ -97,6 +105,7 @@
     color: white;
 }
 .parallaxTitle{
+    color: white;
     margin-top: 7vh;
     text-decoration: underline;
     text-align: center;

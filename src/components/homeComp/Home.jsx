@@ -144,7 +144,7 @@ const Home = () => {
               The parallax effect{" "}
             </p>
           </a>
-          <p style={{ marginTop: "2vh" }}>
+          <p style={{ marginTop: "2vh", color: "white" }}>
             The parallax effect can be mezmerising and give depth and a
             responsive feeling to your website, and if you use it with caution
             you will make your website/app feel so much more profesional.
@@ -172,7 +172,7 @@ const Home = () => {
             }}
           >
             <h2 className={Styles.parallaxTitle}>Im in love with a website</h2>
-            <p style={{ marginTop: "2vh" }}>
+            <p style={{ marginTop: "2vh", color: "white" }}>
               Something with this website made me fall in love, maybe the broken
               sword ish illustartions, combined with the weirdness of trying to
               scroll up and down and you end up going horizontal.
@@ -193,7 +193,7 @@ const Home = () => {
                 className={Styles.textCursive}
                 style={{
                   textDecoration: "underline",
-                  color: "black",
+                  color: "white",
                   marginBottom: "20vh",
                 }}
               >
