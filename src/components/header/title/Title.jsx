@@ -1,10 +1,23 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Styles from "./Title.module.css";
 
 const Title = () => {
+  const [titleAni, setTitleAni] = useState(true);
+
+  const handleClick = () => {
+    setTitleAni(false);
+  };
+
+  if (!titleAni) {
+    setTimeout(() => {
+      setTitleAni(true);
+    }, 2000);
+  }
+
   return (
-    <Link className={Styles.titleLink} to={"/"}>
-      <div className={Styles.container}>
+    <Link onClick={() => handleClick()} className={Styles.titleLink} to={"/"}>
+      <div className={titleAni ? Styles.container : Styles.containerOnClick}>
         <h1 className={Styles.title}>
           <span className={Styles.letterB}>B</span>
           <span className={Styles.letterAN}>a</span>

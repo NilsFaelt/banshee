@@ -9,14 +9,30 @@
     height: auto;
     border: 1px solid black;
     border-radius:  2px;
-    background-color: rgb(183, 146, 252);
+    background-color: rgb(255, 255, 255);
     box-shadow: 10px 10px 10px ;
 }
-.container:hover{
+.containerOnClick{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    margin-left: 1vw;
+    width: 20vw;
+    height: auto;
+    border: 1px solid black;
+    border-radius:  2px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 10px ;
+    animation-name: backgroundAni; 
+    animation-duration: 2s ;
+}
+/* .container:hover{
     animation-name: backgroundAni; 
     animation-duration: 10s ; 
 
-}
+} */
 .title{
     padding-top:1vh;
     margin: 0;
@@ -26,29 +42,19 @@
 }
 .titleLink{
     color: black;
-    text-decoration: none;
+    text-decoration: underline ;
 }
 .shee{
     color: black;
 }
 .letterB{
-    color: rgb(241, 238, 27);
+    color: rgb(0, 0, 0);
 }
 .letterAN{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+
 }
-.letterB:hover{
-    animation-duration: 2s;
-    animation-name: letterB;
-}
-.letterAN:hover{
-    animation-duration: 2s;
-    animation-name: letterB;
-}
-.shee:hover{
-    animation-duration: 2s;
-    animation-name: letterB;
-}
+
 @keyframes letterB{
 50%{
     color:rgb(0, 0, 0) ;
@@ -59,11 +65,10 @@
 }
 }
 @keyframes backgroundAni{
-0%{background-color: rgb(183, 146, 252);}
+
 10%{box-shadow: 0px 0px 0px}
-20%{background-color:yellow ;box-shadow: 10px 10px 10px  }
-80%{background-color: rgb(86, 38, 182);}
-80%{background-color: rgb(183, 146, 252);}
+100%{ box-shadow: 10px 10px 10px  }
+
 }
 
 @media screen and (max-width: 500px) {
