@@ -30,7 +30,12 @@ const NavBarOnClick = ({
       <div className={Styles.linkContainer}>
         {user ? (
           <div className={Styles.linkContainer}>
-            <p onClick={() => loggout()} className={Styles.userLink}>
+            <p
+              onMouseOver={() => changeTitle("LOGOUT")}
+              onMouseOut={() => changeTitle("BANSHEE")}
+              onClick={() => loggout()}
+              className={Styles.userLink}
+            >
               Logout
             </p>
           </div>
