@@ -5,7 +5,13 @@ import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../../firebase-config";
 import { useEffect, useState } from "react";
 
-const NavBarOnClick = ({ user, setUser, setActivateMenu, activateMenu }) => {
+const NavBarOnClick = ({
+  user,
+  setUser,
+  setActivateMenu,
+  activateMenu,
+  changeTitle,
+}) => {
   onAuthStateChanged(auth, (currentUser) => {
     setUser(currentUser);
   });
@@ -16,6 +22,7 @@ const NavBarOnClick = ({ user, setUser, setActivateMenu, activateMenu }) => {
 
   const closeNav = () => {
     setActivateMenu(true);
+    changeTitle("BANSHEE");
   };
 
   return (
@@ -29,26 +36,68 @@ const NavBarOnClick = ({ user, setUser, setActivateMenu, activateMenu }) => {
           </div>
         ) : null}
         {!user ? (
-          <Link onClick={closeNav} className={Styles.userLink} to={"/login"}>
+          <Link
+            onClick={closeNav}
+            onMouseOver={() => changeTitle("LOGIN")}
+            onMouseOut={() => changeTitle("BANSHEE")}
+            className={Styles.userLink}
+            to={"/login"}
+          >
             <p>Login</p>
           </Link>
         ) : null}
-        <Link onClick={closeNav} className={Styles.links} to={"/"}>
+        <Link
+          onMouseOver={() => changeTitle("HOME")}
+          onMouseOut={() => changeTitle("BANSHEE")}
+          onClick={closeNav}
+          className={Styles.links}
+          to={"/"}
+        >
           Home
         </Link>
-        <Link onClick={closeNav} className={Styles.links} to={"/components"}>
+        <Link
+          onMouseOver={() => changeTitle("COMPONENTS")}
+          onMouseOut={() => changeTitle("BANSHEE")}
+          onClick={closeNav}
+          className={Styles.links}
+          to={"/components"}
+        >
           Components
         </Link>
-        <Link onClick={closeNav} className={Styles.links} to={"/about"}>
-          ABout banshee
+        <Link
+          onMouseOver={() => changeTitle("ABOUT BANSHEE")}
+          onMouseOut={() => changeTitle("BANSHEE")}
+          onClick={closeNav}
+          className={Styles.links}
+          to={"/about"}
+        >
+          About banshee
         </Link>
-        <Link onClick={closeNav} className={Styles.links} to={"/"}>
+        <Link
+          onMouseOver={() => changeTitle("DEVELOPERS FORUM")}
+          onMouseOut={() => changeTitle("BANSHEE")}
+          onClick={closeNav}
+          className={Styles.links}
+          to={"/"}
+        >
           developers forum
         </Link>
-        <Link onClick={closeNav} className={Styles.links} to={"/contact"}>
+        <Link
+          onMouseOver={() => changeTitle("CONTACT")}
+          onMouseOut={() => changeTitle("BANSHEE")}
+          onClick={closeNav}
+          className={Styles.links}
+          to={"/contact"}
+        >
           Contact
         </Link>
-        <h2 onClick={closeNav} className={Styles.links} to={"/contact"}>
+        <h2
+          onMouseOver={() => changeTitle("CLOSE MENU")}
+          onMouseOut={() => changeTitle("BANSHEE")}
+          onClick={closeNav}
+          className={Styles.links}
+          to={"/contact"}
+        >
           Close menu
         </h2>
       </div>

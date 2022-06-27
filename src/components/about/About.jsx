@@ -17,13 +17,16 @@ const About = () => {
             i grew so tired of the same look of all webpages all over the place
             and decided that i needed to share some inspirtaion that were a
             little bit more playful and weird. So i started building Banshee
-            were i build and serach for inspirtaion/websites that other people
+            were i build and search for inspirtaion/websites that other people
             have created, and share what i think is funny and weird.
           </p>
         </div>
         <div className={Styles.goalsContainer}>
           <h2 className={Styles.title}>My Goals</h2>
           <p>
+            •I do not use any extrenal librarys except react for the visual,
+            evrything that happens is written from scratch with css and js.
+            <br />
             • Create my own weird components that i think is inspirational and
             fun, and gives a fresh breath of air. <br /> • Find crazy, fun, and
             amazing websites/apps out there and share with you.
