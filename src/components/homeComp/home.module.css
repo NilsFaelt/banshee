@@ -43,7 +43,7 @@
     margin-left: 5vw;
     padding: 2vw;
     padding-bottom: 8vh;
-    border: 1px solid yellow;
+    border: 1px solid white;
     border-radius: 2px;
 }
 .sectionWebLinks{
@@ -56,7 +56,7 @@
     margin-right: 2vw;
     padding: 2vw;
     padding-bottom: 8vh;
-    border: 1px solid yellow;
+    border: 1px solid white;
     border-radius: 2px;
 }
 .section:hover{

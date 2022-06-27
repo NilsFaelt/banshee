@@ -3,7 +3,7 @@ import NavBarOnClick from "../navBarOnClick/NavBarOnClick";
 import Styles from "./menu.module.css";
 
 const Menu = ({ user, setUser, setActivateMenu, activateMenu }) => {
-  const [title, setTitle] = useState("");
+  const [title, setTitle] = useState("BANSHEE");
 
   const changeTitle = (title) => {
     setTitle(title);
