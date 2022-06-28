@@ -3,7 +3,7 @@ import { CogIcon } from "@heroicons/react/outline";
 import { useState } from "react";
 
 const FooterOne = () => {
-  const [activate, setActivate] = useState(true);
+  const [activate, setActivate] = useState(false);
   return (
     <footer onClick={() => setActivate(!activate)} className={Styles.container}>
       <CogIcon className={activate ? Styles.cog : Styles.cogAni} />;
