@@ -28,11 +28,7 @@
     animation-name: backgroundAni; 
     animation-duration: 2s ;
 }
-/* .container:hover{
-    animation-name: backgroundAni; 
-    animation-duration: 10s ; 
 
-} */
 .title{
     padding-top:1vh;
     margin: 0;
@@ -71,4 +67,14 @@
     .title{
         font-size: 8vw;       
     }
+    @keyframes backgroundAni{
+        0%{ width: 40vw;}
+        5%{box-shadow: 0px 0px 0px}
+        100%{
+             width: 40vw;
+             box-shadow: 10px 10px 10px  
+            }
+        
+        
+        }
 }
