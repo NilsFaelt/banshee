@@ -170,3 +170,40 @@
 }
 }
 }
+
+@media screen and (max-width: 500px) {
+  .container{
+    height: 15vh;
+    margin-top: 25vh;
+}
+  .cog{
+    margin-top: 5vh;
+    width: calc(30px + 5vw);
+    color: white;
+    cursor: pointer;
+}
+.cogTwo{
+  width: calc(30px + 5vw);
+  margin-left: -3.5vw;
+
+}
+.cogThree{
+  width: calc(30px + 5vw);
+  margin-left: -24.6vw;
+
+}
+.cogAni{
+  margin-top: 5vh;
+  width: calc(30px + 5vw);
+
+}
+.cogTwoAni{
+  width: calc(30px + 5vw);
+  margin-left: -3.5vw;
+
+}
+.cogThreeAni{
+  width: calc(30px + 5vw);
+  margin-left: -24.6vw;
+}
+}
