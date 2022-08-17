@@ -1,3 +1,2 @@
 # banshee
-## A css library made with react 
-test# banshee
+A playful site most used for my own leisure, playing around with css.
